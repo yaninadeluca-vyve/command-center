@@ -151,5 +151,6 @@ If there is nothing worth flagging, return an empty array: []
         item["id"] = f"auto-{today}-{i+1}"
         item.setdefault("status", "open")
 
+    print(f"  Raw Claude output: {raw[:500]}")
     print(f"  Claude returned {len(items)} items.")
     return items

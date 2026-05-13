@@ -1,0 +1,45 @@
+name: Daily Dashboard Update
+
+on:
+  schedule:
+    - cron: "0 11 * * *"
+  workflow_dispatch:
+
+jobs:
+  update-dashboard:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout repo
+        uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+
+      - name: Install dependencies
+        run: pip install -r requirements.txt
+
+      - name: Run dashboard pipeline
+        env:
+          ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }}
+          GMAIL_CREDENTIALS_MAIN: ${{ secrets.GMAIL_CREDENTIALS_MAIN }}
+          GMAIL_TOKEN_MAIN: ${{ secrets.GMAIL_TOKEN_MAIN }}
+          GMAIL_CREDENTIALS_VYVE: ${{ secrets.GMAIL_CREDENTIALS_VYVE }}
+          GMAIL_TOKEN_VYVE: ${{ secrets.GMAIL_TOKEN_VYVE }}
+          GMAIL_CREDENTIALS_INFUSIVE: ${{ secrets.GMAIL_CREDENTIALS_INFUSIVE }}
+          GMAIL_TOKEN_INFUSIVE: ${{ secrets.GMAIL_TOKEN_INFUSIVE }}
+          SLACK_BOT_TOKEN: ${{ secrets.SLACK_BOT_TOKEN }}
+          FIREFLIES_API_KEY: ${{ secrets.FIREFLIES_API_KEY }}
+          NETLIFY_TOKEN: ${{ secrets.NETLIFY_TOKEN }}
+          NETLIFY_SITE_ID: ${{ secrets.NETLIFY_SITE_ID }}
+        run: python main.py
+
+      - name: Commit updated data.json
+        run: |
+          git config user.name "Dashboard Bot"
+          git config user.email "bot@noreply.github.com"
+          git add dashboard/data.json
+          git diff --staged --quiet || git commit -m "Auto-update dashboard $(date -u +'%Y-%m-%d %H:%M UTC')"
+          git push

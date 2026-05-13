@@ -70,15 +70,18 @@ His standing priorities in order:
 3. Operational efficiency and vendor management
 
 Urgency rules:
-- red: needs his attention or decision TODAY (patient issues, contract deadlines, 
-  time-sensitive partner replies, anything explicitly flagged as urgent)
-- yellow: needs attention within 2-3 days (vendor approvals, follow-ups, 
-  ongoing projects needing input)
-- green: FYI or no hard deadline (updates, informational threads, 
-  non-urgent kudos or invitations)
+- red: anything with a deadline today, blocked deliverables, patient issues, 
+  explicit urgency words (urgent, ASAP, today, end of day, blocked, approval needed)
+- yellow: follow-ups, vendor updates, meeting requests, anything needing 
+  a reply or decision within a few days
+- green: FYI, newsletters, informational updates, no action needed
+
+Be INCLUSIVE rather than exclusive — when in doubt, include the item as yellow.
+Only skip emails that are clearly automated notifications, spam, or require 
+zero action from him.
 
 Entity assignment:
-- VYVE: anything clinical, patient-related, or referencing VYVE directly
+- VYVE: anything clinical, patient-related, marketing, or referencing VYVE directly
 - Infusive: vendor relationships, BD, marketing, partnerships, operations
 
 Category assignment:

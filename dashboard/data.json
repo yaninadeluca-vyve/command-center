@@ -1,0 +1,48 @@
+{
+  "lastUpdated": "2026-05-13T20:47:35.148865",
+  "vendors": [
+    "Influex",
+    "UPQODE",
+    "One Billion Media",
+    "Guide Post Marketing",
+    "SSRP",
+    "Podcasts"
+  ],
+  "clients": [
+    "iCryo",
+    "Guardian",
+    "Intervene MD",
+    "Hydrate IV Bar"
+  ],
+  "pharmacies": [
+    "Olympia",
+    "Ageless",
+    "Strive",
+    "Tandem",
+    "Wells",
+    "GenoGenix",
+    "Empower",
+    "Progress",
+    "McGuff"
+  ],
+  "calendar": [],
+  "items": [
+    {
+      "id": "auto-20260513-1",
+      "urgency": "yellow",
+      "entity": "VYVE",
+      "category": "vendor",
+      "categoryLabel": "Vendor",
+      "vendor": null,
+      "title": "LeadMaker Sales SDR proposal follow-up",
+      "summary": "LeadMaker is following up on their full-time SDR proposal for inbound lead management and appointment setting. They're offering to schedule a call to review candidates.",
+      "source": "gmail",
+      "sourceLabel": "Gmail — VYVE",
+      "from": "sales@leadmaker.agency",
+      "received": "2026-05-13T07:40:22Z",
+      "status": "open",
+      "link": "https://mail.google.com/mail/u/0/#inbox/19e2047dabbd2e5a",
+      "actionNeeded": "Review SDR proposal and decide whether to schedule a call to discuss candidates."
+    }
+  ]
+}

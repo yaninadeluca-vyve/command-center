@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-05-13T22:01:13.202439",
+  "lastUpdated": "2026-05-13T22:05:00.682820",
   "vendors": [
     "Influex",
     "UPQODE",
@@ -29,37 +29,37 @@
   "items": [
     {
       "id": "auto-20260513-1",
-      "urgency": "red",
-      "entity": "VYVE",
-      "category": "vendor",
-      "categoryLabel": "Vendor",
-      "vendor": "UPQODE",
-      "title": "UPQODE Website Approval Needed Today",
-      "summary": "UPQODE team is blocked and needs final approval on website copy changes to push to production. They have a client demo tomorrow morning.",
-      "source": "gmail",
-      "sourceLabel": "Gmail — VYVE",
-      "from": "deluca.ys@gmail.com",
-      "received": "2026-05-13T18:45:40-03:00",
-      "status": "open",
-      "link": "https://mail.google.com/mail/u/0/#inbox/19e234e0978c0127",
-      "actionNeeded": "Review and approve website copy changes or flag remaining edits."
-    },
-    {
-      "id": "auto-20260513-2",
       "urgency": "yellow",
       "entity": "Infusive",
       "category": "client",
       "categoryLabel": "Client",
       "vendor": "Hydrate IV Bar",
-      "title": "Partnership Proposal from Hydrate IV Bar",
-      "summary": "Hydrate IV Bar proposes co-branded IV therapy packages for Miami and Houston locations. They have budget allocated and want a 20-minute call this week.",
+      "title": "Partnership Proposal — Hydrate IV Bar",
+      "summary": "Hydrate IV Bar is proposing co-branded IV therapy packages for Miami and Houston locations. They have budget allocated and want a 20-minute call this week.",
       "source": "gmail",
       "sourceLabel": "Gmail — VYVE",
-      "from": "deluca.ys@gmail.com",
+      "from": "Yanina Deluca <deluca.ys@gmail.com>",
       "received": "2026-05-13T18:53:05-03:00",
       "status": "open",
       "link": "https://mail.google.com/mail/u/0/#inbox/19e2354d1400421d",
-      "actionNeeded": "Schedule 20-minute call Thursday or Friday to discuss partnership proposal."
+      "actionNeeded": "Review partnership proposal and schedule call for Thursday or Friday."
+    },
+    {
+      "id": "auto-20260513-2",
+      "urgency": "red",
+      "entity": "VYVE",
+      "category": "vendor",
+      "categoryLabel": "Vendor",
+      "vendor": "UPQODE",
+      "title": "UPQODE Website Launch — Approval Needed Today",
+      "summary": "UPQODE team is blocked and cannot push website to production without final approval on copy changes. Client demo scheduled for tomorrow morning.",
+      "source": "gmail",
+      "sourceLabel": "Gmail — VYVE",
+      "from": "Yanina Deluca <deluca.ys@gmail.com>",
+      "received": "2026-05-13T18:45:40-03:00",
+      "status": "open",
+      "link": "https://mail.google.com/mail/u/0/#inbox/19e234e0978c0127",
+      "actionNeeded": "Review and approve copy changes ASAP to unblock production deployment before tomorrow's client demo."
     },
     {
       "id": "auto-20260513-3",
@@ -68,15 +68,15 @@
       "category": "vendor",
       "categoryLabel": "Vendor",
       "vendor": null,
-      "title": "LeadMaker Sales SDR Proposal Follow-up",
-      "summary": "LeadMaker following up on full-time SDR proposal for inbound lead management and appointment setting sent on May 9th.",
+      "title": "LeadMaker SDR Proposal Follow-up",
+      "summary": "LeadMaker is following up on their full-time SDR proposal for inbound lead management and appointment setting after initial conversation on May 9.",
       "source": "gmail",
       "sourceLabel": "Gmail — VYVE",
-      "from": "sales@leadmaker.agency",
+      "from": "LeadMaker Sales Team <sales@leadmaker.agency>",
       "received": "2026-05-13T15:40:22+08:00",
       "status": "open",
       "link": "https://mail.google.com/mail/u/0/#inbox/19e2047dabbd2e5a",
-      "actionNeeded": "Review SDR proposal and decide whether to schedule call to review candidates."
+      "actionNeeded": "Review SDR proposal and decide whether to schedule call to discuss candidates."
     }
   ]
 }

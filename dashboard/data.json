@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-05-13T21:48:47.373229",
+  "lastUpdated": "2026-05-13T21:51:17.596391",
   "vendors": [
     "Influex",
     "UPQODE",
@@ -34,15 +34,15 @@
       "category": "vendor",
       "categoryLabel": "Vendor",
       "vendor": "UPQODE",
-      "title": "UPQODE Website Launch Blocked — Approval Needed",
-      "summary": "Website team is blocked awaiting final approval on copy changes sent last week. Client demo scheduled for tomorrow morning requires immediate resolution.",
+      "title": "UPQODE Website Launch — Final Approval Needed Today",
+      "summary": "UPQODE team is blocked waiting for final approval on website copy changes. Client demo scheduled for tomorrow morning requires resolution today.",
       "source": "gmail",
       "sourceLabel": "Gmail — VYVE",
       "from": "Yanina Deluca <deluca.ys@gmail.com>",
       "received": "2026-05-13T18:45:40-03:00",
       "status": "open",
       "link": "https://mail.google.com/mail/u/0/#inbox/19e234e0978c0127",
-      "actionNeeded": "Review and approve copy changes or flag remaining changes to unblock website production before tomorrow's demo."
+      "actionNeeded": "Review and approve final website copy changes so UPQODE can push to production before tomorrow's client demo."
     },
     {
       "id": "auto-20260513-2",
@@ -52,14 +52,14 @@
       "categoryLabel": "Vendor",
       "vendor": "LeadMaker",
       "title": "LeadMaker SDR Proposal Follow-up",
-      "summary": "LeadMaker Sales Team following up on full-time SDR proposal for inbound lead management sent after initial discussion on May 9th.",
+      "summary": "LeadMaker following up on sales proposal for full-time SDR for inbound lead management and patient engagement.",
       "source": "gmail",
       "sourceLabel": "Gmail — VYVE",
       "from": "LeadMaker Sales Team <sales@leadmaker.agency>",
       "received": "2026-05-13T15:40:22+08:00",
       "status": "open",
       "link": "https://mail.google.com/mail/u/0/#inbox/19e2047dabbd2e5a",
-      "actionNeeded": "Review SDR proposal and decide whether to schedule call to review candidates or pass on the opportunity."
+      "actionNeeded": "Decide whether to proceed with LeadMaker SDR proposal and schedule call to review candidates if interested."
     }
   ]
 }

@@ -10,7 +10,7 @@ import requests
 
 
 ANTHROPIC_API = "https://api.anthropic.com/v1/messages"
-MODEL = "claude-sonnet-4-20250514"
+MODEL = "claude-sonnet-4-5"
 
 
 def _call_claude(api_key: str, system: str, user_prompt: str) -> str:

@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-05-13T21:47:07.346136",
+  "lastUpdated": "2026-05-13T21:48:47.373229",
   "vendors": [
     "Influex",
     "UPQODE",
@@ -34,15 +34,15 @@
       "category": "vendor",
       "categoryLabel": "Vendor",
       "vendor": "UPQODE",
-      "title": "UPQODE website launch blocked — approval needed",
-      "summary": "Website team cannot push to production without final approval on copy changes. Client demo scheduled for tomorrow morning.",
+      "title": "UPQODE Website Launch Blocked — Approval Needed",
+      "summary": "Website team is blocked awaiting final approval on copy changes sent last week. Client demo scheduled for tomorrow morning requires immediate resolution.",
       "source": "gmail",
       "sourceLabel": "Gmail — VYVE",
       "from": "Yanina Deluca <deluca.ys@gmail.com>",
       "received": "2026-05-13T18:45:40-03:00",
       "status": "open",
       "link": "https://mail.google.com/mail/u/0/#inbox/19e234e0978c0127",
-      "actionNeeded": "Review and approve copy changes or flag remaining edits so team can launch before tomorrow's demo."
+      "actionNeeded": "Review and approve copy changes or flag remaining changes to unblock website production before tomorrow's demo."
     },
     {
       "id": "auto-20260513-2",
@@ -50,33 +50,16 @@
       "entity": "VYVE",
       "category": "vendor",
       "categoryLabel": "Vendor",
-      "vendor": null,
-      "title": "Netlify credits exhausted — service interruption",
-      "summary": "Netlify team has used all available credits and needs top-up to restore full service.",
-      "source": "gmail",
-      "sourceLabel": "Gmail — VYVE",
-      "from": "Netlify <team@netlify.com>",
-      "received": "2026-05-13T21:41:32+00:00",
-      "status": "open",
-      "link": "https://mail.google.com/mail/u/0/#inbox/19e2349b545c21b0",
-      "actionNeeded": "Approve credit top-up for Netlify to restore hosting service."
-    },
-    {
-      "id": "auto-20260513-3",
-      "urgency": "yellow",
-      "entity": "VYVE",
-      "category": "vendor",
-      "categoryLabel": "Vendor",
-      "vendor": null,
-      "title": "LeadMaker SDR proposal follow-up",
-      "summary": "LeadMaker following up on full-time SDR proposal for inbound lead management and appointment setting.",
+      "vendor": "LeadMaker",
+      "title": "LeadMaker SDR Proposal Follow-up",
+      "summary": "LeadMaker Sales Team following up on full-time SDR proposal for inbound lead management sent after initial discussion on May 9th.",
       "source": "gmail",
       "sourceLabel": "Gmail — VYVE",
       "from": "LeadMaker Sales Team <sales@leadmaker.agency>",
       "received": "2026-05-13T15:40:22+08:00",
       "status": "open",
       "link": "https://mail.google.com/mail/u/0/#inbox/19e2047dabbd2e5a",
-      "actionNeeded": "Review proposal and decide whether to schedule call to evaluate SDR candidates or decline."
+      "actionNeeded": "Review SDR proposal and decide whether to schedule call to review candidates or pass on the opportunity."
     }
   ]
 }

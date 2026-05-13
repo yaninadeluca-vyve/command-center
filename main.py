@@ -178,7 +178,7 @@ def main():
     }
 
     # Save locally (so GitHub has a copy too)
-    out_path = os.path.join(os.path.dirname(__file__), "dashboard", "data.json")
+    out_path = os.path.join(os.path.dirname(__file__), "data.json")
     os.makedirs(os.path.dirname(out_path), exist_ok=True)
     with open(out_path, "w") as f:
         json.dump(data, f, indent=2, ensure_ascii=False)

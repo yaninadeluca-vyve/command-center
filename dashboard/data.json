@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-05-13T21:03:52.747131",
+  "lastUpdated": "2026-05-13T21:25:09.019237",
   "vendors": [
     "Influex",
     "UPQODE",
@@ -26,23 +26,5 @@
     "McGuff"
   ],
   "calendar": [],
-  "items": [
-    {
-      "id": "auto-20260513-1",
-      "urgency": "yellow",
-      "entity": "VYVE",
-      "category": "vendor",
-      "categoryLabel": "Vendor",
-      "vendor": "LeadMaker",
-      "title": "LeadMaker SDR proposal awaiting response",
-      "summary": "LeadMaker following up on full-time SDR proposal for inbound lead management and appointment setting sent on May 9th.",
-      "source": "gmail",
-      "sourceLabel": "Gmail — VYVE",
-      "from": "LeadMaker Sales Team <sales@leadmaker.agency>",
-      "received": "2026-05-13T15:40:22+08:00",
-      "status": "open",
-      "link": "https://mail.google.com/mail/u/0/#inbox/19e2047dabbd2e5a",
-      "actionNeeded": "Review LeadMaker SDR proposal and decide whether to proceed or decline."
-    }
-  ]
+  "items": []
 }

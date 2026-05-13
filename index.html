@@ -1,0 +1,1289 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Command Center</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@300;400;500;600&family=Karla:wght@300;400;500&family=Karla:ital@1&display=swap" rel="stylesheet">
+<style>
+:root {
+  --parchment: #F7F4EE;
+  --parchment2: #EFE9DF;
+  --parchment3: #E6DDD0;
+  --ink: #1C1814;
+  --ink2: #5A5248;
+  --ink3: #9A9088;
+  --gold: #8B6914;
+  --gold-light: #F5EDD6;
+  --gold-border: #D4B96A;
+  --border: #DDD5C8;
+  --border2: #C8BEAF;
+  --surface: #FDFBF7;
+  --surface2: #F2EDE4;
+
+  --vyve: #2D5A4E;
+  --vyve-bg: #EDF5F2;
+  --vyve-border: #A8CFBE;
+
+  --infusive: #3A2D6E;
+  --infusive-bg: #EFECF8;
+  --infusive-border: #B8AEE0;
+
+  --vendor-color: #7A4520;
+  --vendor-bg: #FBF0E8;
+  --vendor-border: #DDBB9A;
+
+  --client-color: #1A4A6E;
+  --client-bg: #EBF3FA;
+  --client-border: #9DC4E0;
+
+  --pharmacy-color: #3D5A1E;
+  --pharmacy-bg: #EFF5E8;
+  --pharmacy-border: #AECB88;
+
+  --red: #8B2215;
+  --red-bg: #FBF0EE;
+  --red-border: #D9A49E;
+  --yellow: #7A5510;
+  --yellow-bg: #FBF5E8;
+  --yellow-border: #D4BC7A;
+  --green: #1A5A32;
+  --green-bg: #EBF5EF;
+  --green-border: #8ECAA5;
+
+  --font-display: 'Cormorant Garamond', Georgia, serif;
+  --font-body: 'Karla', sans-serif;
+  --radius: 8px;
+  --radius-sm: 5px;
+  --shadow: 0 1px 4px rgba(28,24,20,0.06), 0 4px 16px rgba(28,24,20,0.04);
+  --shadow-hover: 0 2px 8px rgba(28,24,20,0.10), 0 8px 24px rgba(28,24,20,0.07);
+}
+
+* { box-sizing: border-box; margin: 0; padding: 0; }
+
+body {
+  font-family: var(--font-body);
+  background: var(--parchment);
+  color: var(--ink);
+  min-height: 100vh;
+  font-size: 14px;
+  line-height: 1.55;
+}
+
+/* ── TOPBAR ── */
+.topbar {
+  position: sticky; top: 0; z-index: 100;
+  background: var(--surface);
+  border-bottom: 1px solid var(--border);
+  padding: 0 2rem;
+  display: flex; align-items: center; justify-content: space-between;
+  height: 60px;
+  box-shadow: 0 1px 0 var(--parchment2);
+}
+
+.topbar-brand {
+  display: flex; align-items: baseline; gap: 10px;
+}
+
+.brand-name {
+  font-family: var(--font-display);
+  font-size: 22px;
+  font-weight: 500;
+  letter-spacing: 0.01em;
+  color: var(--ink);
+}
+
+.brand-sep {
+  width: 1px; height: 16px;
+  background: var(--border2);
+  align-self: center;
+}
+
+.brand-sub {
+  font-size: 12px;
+  font-weight: 300;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: var(--ink3);
+}
+
+.topbar-date {
+  font-size: 12px;
+  font-weight: 300;
+  letter-spacing: 0.06em;
+  color: var(--ink3);
+}
+
+.topbar-right { display: flex; align-items: center; gap: 10px; }
+
+.last-updated { font-size: 12px; color: var(--ink3); font-weight: 300; }
+
+.btn {
+  display: inline-flex; align-items: center; gap: 6px;
+  font-family: var(--font-body);
+  font-size: 12px; font-weight: 500;
+  letter-spacing: 0.04em;
+  padding: 7px 16px;
+  border-radius: var(--radius-sm);
+  border: 1px solid var(--border2);
+  background: var(--surface);
+  color: var(--ink2);
+  cursor: pointer;
+  transition: all 0.18s;
+  text-decoration: none;
+  white-space: nowrap;
+}
+.btn:hover { background: var(--parchment2); border-color: var(--border2); color: var(--ink); }
+
+.btn-gold {
+  background: var(--gold);
+  border-color: var(--gold);
+  color: #fff;
+}
+.btn-gold:hover { background: #7a5c10; border-color: #7a5c10; color: #fff; }
+
+/* ── LAYOUT ── */
+.layout {
+  display: grid;
+  grid-template-columns: 310px 1fr;
+  min-height: calc(100vh - 60px);
+}
+
+/* ── SIDEBAR ── */
+.sidebar {
+  background: var(--surface);
+  border-right: 1px solid var(--border);
+  padding: 1.75rem 1.5rem;
+  display: flex; flex-direction: column; gap: 2rem;
+}
+
+.sidebar-section-title {
+  font-family: var(--font-display);
+  font-size: 15px;
+  font-weight: 500;
+  letter-spacing: 0.04em;
+  color: var(--ink);
+  margin-bottom: 1rem;
+  padding-bottom: 0.5rem;
+  border-bottom: 1px solid var(--border);
+}
+
+.cal-item {
+  display: flex; gap: 12px;
+  padding: 12px 14px;
+  border-radius: var(--radius);
+  border: 1px solid var(--border);
+  background: var(--parchment);
+  margin-bottom: 8px;
+  transition: all 0.18s;
+  cursor: default;
+}
+.cal-item:hover { border-color: var(--border2); box-shadow: var(--shadow); }
+
+.cal-time {
+  font-size: 11px; font-weight: 500;
+  color: var(--ink3);
+  letter-spacing: 0.04em;
+  min-width: 38px;
+  padding-top: 2px;
+}
+
+.cal-body { flex: 1; }
+
+.cal-title {
+  font-size: 13px; font-weight: 500;
+  color: var(--ink);
+  margin-bottom: 3px;
+  line-height: 1.35;
+}
+
+.cal-meta { font-size: 11px; color: var(--ink3); font-weight: 300; }
+
+.cal-tags { display: flex; gap: 5px; margin-top: 6px; flex-wrap: wrap; }
+
+.cal-prep {
+  font-size: 11px; font-weight: 500;
+  color: var(--yellow);
+  background: var(--yellow-bg);
+  border: 1px solid var(--yellow-border);
+  border-radius: 99px;
+  padding: 2px 8px;
+  display: inline-block;
+}
+
+/* ── LEGEND ── */
+.legend { display: flex; flex-direction: column; gap: 7px; }
+.legend-row { display: flex; align-items: center; gap: 8px; font-size: 12px; color: var(--ink2); font-weight: 300; }
+.legend-dot { width: 8px; height: 8px; border-radius: 50%; flex-shrink: 0; }
+
+/* ── MAIN ── */
+.main { padding: 1.75rem 2rem; }
+
+/* ── STATS ── */
+.stats-row {
+  display: grid; grid-template-columns: repeat(4, 1fr);
+  gap: 10px; margin-bottom: 1.75rem;
+}
+
+.stat-card {
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  padding: 16px 18px;
+  box-shadow: var(--shadow);
+}
+.stat-label {
+  font-size: 10px; font-weight: 500;
+  letter-spacing: 0.12em; text-transform: uppercase;
+  color: var(--ink3); margin-bottom: 4px;
+}
+.stat-num {
+  font-family: var(--font-display);
+  font-size: 32px; font-weight: 300;
+  color: var(--ink); line-height: 1;
+}
+.stat-num.red { color: var(--red); }
+.stat-num.yellow { color: var(--yellow); }
+.stat-num.green { color: var(--green); }
+
+/* ── FILTER SYSTEM ── */
+.filters-wrap {
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  padding: 14px 18px;
+  margin-bottom: 1.5rem;
+  box-shadow: var(--shadow);
+  display: flex; flex-direction: column; gap: 10px;
+}
+
+.filter-row {
+  display: flex; align-items: center; gap: 8px; flex-wrap: wrap;
+}
+
+.filter-row-label {
+  font-size: 10px; font-weight: 500;
+  letter-spacing: 0.12em; text-transform: uppercase;
+  color: var(--ink3);
+  min-width: 70px;
+}
+
+.chip {
+  font-family: var(--font-body);
+  font-size: 12px; font-weight: 400;
+  padding: 4px 12px;
+  border-radius: 99px;
+  border: 1px solid var(--border);
+  background: var(--parchment);
+  color: var(--ink2);
+  cursor: pointer;
+  transition: all 0.16s;
+  white-space: nowrap;
+}
+.chip:hover { border-color: var(--border2); color: var(--ink); }
+
+.chip.active { background: var(--ink); color: var(--parchment); border-color: var(--ink); }
+
+.chip.vyve.active { background: var(--vyve); border-color: var(--vyve); color: #fff; }
+.chip.infusive.active { background: var(--infusive); border-color: var(--infusive); color: #fff; }
+.chip.vendor-chip.active { background: var(--vendor-color); border-color: var(--vendor-color); color: #fff; }
+.chip.client-chip.active { background: var(--client-color); border-color: var(--client-color); color: #fff; }
+.chip.pharmacy-chip.active { background: var(--pharmacy-color); border-color: var(--pharmacy-color); color: #fff; }
+.chip.red.active { background: var(--red); border-color: var(--red); color: #fff; }
+.chip.yellow.active { background: var(--yellow); border-color: var(--yellow); color: #fff; }
+.chip.green.active { background: var(--green); border-color: var(--green); color: #fff; }
+
+/* vendor sub-filter (hidden until vendor category active) */
+.vendor-subfilter { display: none; flex-wrap: wrap; gap: 6px; }
+.vendor-subfilter.visible { display: flex; }
+
+/* ── ADD ITEM PANEL ── */
+.add-panel {
+  background: var(--surface);
+  border: 1px solid var(--gold-border);
+  border-radius: var(--radius);
+  padding: 1.5rem;
+  margin-bottom: 1.5rem;
+  display: none;
+  box-shadow: var(--shadow);
+}
+.add-panel.open { display: block; }
+.add-panel-title {
+  font-family: var(--font-display);
+  font-size: 18px; font-weight: 500;
+  margin-bottom: 1.25rem;
+  color: var(--ink);
+}
+
+.form-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 12px; margin-bottom: 12px; }
+.form-grid.cols3 { grid-template-columns: 1fr 1fr 1fr; }
+.form-grid.full { grid-template-columns: 1fr; }
+.form-group { display: flex; flex-direction: column; gap: 4px; }
+.form-group label {
+  font-size: 10px; font-weight: 500;
+  letter-spacing: 0.1em; text-transform: uppercase;
+  color: var(--ink3);
+}
+.form-group input,
+.form-group select,
+.form-group textarea {
+  font-family: var(--font-body);
+  font-size: 13px;
+  padding: 8px 11px;
+  border: 1px solid var(--border);
+  border-radius: var(--radius-sm);
+  background: var(--parchment);
+  color: var(--ink);
+  outline: none;
+  transition: border-color 0.16s;
+}
+.form-group input:focus,
+.form-group select:focus,
+.form-group textarea:focus { border-color: var(--gold-border); }
+.form-group textarea { resize: vertical; min-height: 72px; }
+
+.form-actions { display: flex; gap: 8px; justify-content: flex-end; margin-top: 14px; }
+
+/* ── ITEM CARDS ── */
+.urgency-group { margin-bottom: 1.75rem; }
+
+.urgency-header {
+  display: flex; align-items: center; gap: 10px;
+  margin-bottom: 0.75rem;
+}
+
+.urgency-label {
+  font-family: var(--font-display);
+  font-size: 17px; font-weight: 500;
+  letter-spacing: 0.02em;
+}
+.urgency-label.red { color: var(--red); }
+.urgency-label.yellow { color: var(--yellow); }
+.urgency-label.green { color: var(--green); }
+
+.urgency-count {
+  font-size: 11px; font-weight: 300;
+  color: var(--ink3); letter-spacing: 0.06em;
+}
+
+.item-card {
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  background: var(--surface);
+  margin-bottom: 8px;
+  transition: all 0.18s;
+  overflow: hidden;
+  box-shadow: var(--shadow);
+}
+.item-card:hover { border-color: var(--border2); box-shadow: var(--shadow-hover); }
+.item-card.done { opacity: 0.38; }
+.item-card.red { border-left: 3px solid var(--red); }
+.item-card.yellow { border-left: 3px solid var(--yellow); }
+.item-card.green { border-left: 3px solid var(--green); }
+
+.item-body {
+  padding: 14px 18px;
+  display: flex; gap: 14px; align-items: flex-start;
+}
+
+.item-check {
+  width: 18px; height: 18px;
+  border-radius: 4px;
+  border: 1.5px solid var(--border2);
+  background: transparent;
+  cursor: pointer; flex-shrink: 0;
+  margin-top: 2px;
+  display: flex; align-items: center; justify-content: center;
+  transition: all 0.16s;
+  appearance: none; -webkit-appearance: none;
+}
+.item-check:hover { border-color: var(--green); }
+.item-check.checked { background: var(--green); border-color: var(--green); }
+.item-check.checked::after { content: '✓'; font-size: 11px; color: #fff; font-weight: 500; }
+
+.item-content { flex: 1; min-width: 0; }
+
+.item-title {
+  font-size: 14px; font-weight: 500;
+  color: var(--ink); margin-bottom: 4px;
+  line-height: 1.35;
+}
+
+.item-summary {
+  font-size: 13px; font-weight: 300;
+  color: var(--ink2); margin-bottom: 8px;
+  line-height: 1.55;
+}
+
+.item-action {
+  font-size: 12px; font-style: italic;
+  color: var(--ink3); margin-bottom: 8px;
+}
+.item-action::before { content: '→ '; font-style: normal; }
+
+.item-tags { display: flex; flex-wrap: wrap; gap: 5px; align-items: center; }
+
+/* ── TAGS / BADGES ── */
+.tag {
+  font-size: 11px; font-weight: 500;
+  padding: 2px 9px;
+  border-radius: 99px;
+  border: 1px solid;
+  white-space: nowrap;
+  letter-spacing: 0.02em;
+}
+
+.tag-vyve { background: var(--vyve-bg); color: var(--vyve); border-color: var(--vyve-border); }
+.tag-infusive { background: var(--infusive-bg); color: var(--infusive); border-color: var(--infusive-border); }
+.tag-vendor { background: var(--vendor-bg); color: var(--vendor-color); border-color: var(--vendor-border); }
+.tag-client { background: var(--client-bg); color: var(--client-color); border-color: var(--client-border); }
+.tag-pharmacy { background: var(--pharmacy-bg); color: var(--pharmacy-color); border-color: var(--pharmacy-border); }
+.tag-gmail { background: #FBF0EE; color: #8B2215; border-color: #D9A49E; }
+.tag-slack { background: #EEEDF8; color: #3A2D6E; border-color: #B8AEE0; }
+.tag-time { background: var(--parchment2); color: var(--ink3); border-color: var(--border); font-weight: 300; }
+
+/* ── ITEM ACTIONS ── */
+.item-actions {
+  display: flex; gap: 6px; align-items: center;
+  flex-shrink: 0; margin-top: 2px;
+}
+
+.status-sel {
+  font-family: var(--font-body);
+  font-size: 12px;
+  padding: 5px 9px;
+  border-radius: var(--radius-sm);
+  border: 1px solid var(--border);
+  background: var(--parchment);
+  color: var(--ink2);
+  cursor: pointer;
+  appearance: none; -webkit-appearance: none;
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='9' height='5'%3E%3Cpath d='M0 0l4.5 5L9 0z' fill='%239A9088'/%3E%3C/svg%3E");
+  background-repeat: no-repeat;
+  background-position: right 8px center;
+  padding-right: 22px;
+}
+
+.open-link {
+  font-size: 11px; font-weight: 500;
+  color: var(--ink3);
+  text-decoration: none;
+  padding: 5px 10px;
+  border-radius: var(--radius-sm);
+  border: 1px solid var(--border);
+  transition: all 0.16s;
+  white-space: nowrap;
+  letter-spacing: 0.03em;
+}
+.open-link:hover { background: var(--parchment2); color: var(--ink); border-color: var(--border2); }
+
+.empty-state {
+  text-align: center; padding: 3rem 1rem;
+  color: var(--ink3); font-size: 13px; font-weight: 300;
+  font-style: italic;
+}
+
+/* ── EDIT BUTTON ON CARD ── */
+.edit-btn {
+  font-family: var(--font-body);
+  font-size: 11px; font-weight: 500;
+  letter-spacing: 0.04em;
+  color: var(--ink3);
+  background: transparent;
+  border: 1px solid var(--border);
+  border-radius: var(--radius-sm);
+  padding: 4px 9px;
+  cursor: pointer;
+  transition: all 0.16s;
+  white-space: nowrap;
+}
+.edit-btn:hover { background: var(--parchment2); color: var(--ink); border-color: var(--border2); }
+
+/* ── EDIT MODAL ── */
+.modal-overlay {
+  position: fixed; inset: 0; z-index: 200;
+  background: rgba(28,24,20,0.45);
+  display: none; align-items: center; justify-content: center;
+  backdrop-filter: blur(2px);
+  -webkit-backdrop-filter: blur(2px);
+  padding: 1rem;
+}
+.modal-overlay.open { display: flex; }
+
+.modal {
+  background: var(--surface);
+  border: 1px solid var(--gold-border);
+  border-radius: var(--radius);
+  padding: 1.75rem;
+  width: 560px; max-width: 100%;
+  max-height: 90vh; overflow-y: auto;
+  box-shadow: 0 8px 40px rgba(28,24,20,0.18);
+  animation: modalIn 0.2s ease;
+}
+
+@keyframes modalIn {
+  from { opacity: 0; transform: translateY(10px) scale(0.98); }
+  to   { opacity: 1; transform: translateY(0) scale(1); }
+}
+
+.modal-header {
+  display: flex; align-items: baseline; justify-content: space-between;
+  margin-bottom: 1.25rem;
+}
+
+.modal-title {
+  font-family: var(--font-display);
+  font-size: 20px; font-weight: 500;
+  color: var(--ink);
+}
+
+.modal-close {
+  background: none; border: none;
+  font-size: 20px; color: var(--ink3);
+  cursor: pointer; line-height: 1;
+  padding: 2px 4px; border-radius: 4px;
+  transition: color 0.15s;
+}
+.modal-close:hover { color: var(--ink); }
+
+.modal-footer {
+  display: flex; justify-content: space-between; align-items: center;
+  margin-top: 1.25rem; padding-top: 1rem;
+  border-top: 1px solid var(--border);
+}
+
+.btn-danger {
+  font-family: var(--font-body);
+  font-size: 12px; font-weight: 500;
+  padding: 7px 14px;
+  border-radius: var(--radius-sm);
+  border: 1px solid #D9A49E;
+  background: var(--red-bg);
+  color: var(--red);
+  cursor: pointer;
+  transition: all 0.16s;
+}
+.btn-danger:hover { background: var(--red); color: #fff; border-color: var(--red); }
+
+/* ── DIVIDER LINE ── */
+.gold-rule {
+  height: 1px;
+  background: linear-gradient(to right, transparent, var(--gold-border), transparent);
+  margin: 0.25rem 0 1.25rem;
+}
+
+@media (max-width: 960px) {
+  .layout { grid-template-columns: 1fr; }
+  .sidebar { border-right: none; border-bottom: 1px solid var(--border); }
+  .stats-row { grid-template-columns: repeat(2,1fr); }
+}
+</style>
+</head>
+<body>
+
+<!-- TOPBAR -->
+<div class="topbar">
+  <div class="topbar-brand">
+    <span class="brand-name">Command Center</span>
+    <div class="brand-sep"></div>
+    <span class="brand-sub">Executive Dashboard</span>
+  </div>
+  <div class="topbar-date" id="topbar-date"></div>
+  <div class="topbar-right">
+    <span class="last-updated" id="last-updated-label"></span>
+    <button class="btn" onclick="toggleAdd()">+ Add item</button>
+    <button class="btn btn-gold" onclick="location.reload()">↻ Refresh</button>
+  </div>
+</div>
+
+<div class="layout">
+
+  <!-- SIDEBAR -->
+  <div class="sidebar">
+    <div>
+      <div class="sidebar-section-title">Today's Schedule</div>
+      <div id="cal-list"></div>
+    </div>
+    <div>
+      <div class="sidebar-section-title">Key</div>
+      <div class="legend">
+        <div class="legend-row"><div class="legend-dot" style="background:var(--red)"></div> Urgent — action needed today</div>
+        <div class="legend-row"><div class="legend-dot" style="background:var(--yellow)"></div> Pending — awaiting decision</div>
+        <div class="legend-row"><div class="legend-dot" style="background:var(--green)"></div> FYI — no immediate deadline</div>
+        <div style="height:6px"></div>
+        <div class="legend-row"><div class="legend-dot" style="background:var(--vyve);border-radius:2px"></div> VYVE</div>
+        <div class="legend-row"><div class="legend-dot" style="background:var(--infusive);border-radius:2px"></div> Infusive</div>
+        <div class="legend-row"><div class="legend-dot" style="background:var(--vendor-color);border-radius:2px"></div> Vendor</div>
+        <div class="legend-row"><div class="legend-dot" style="background:var(--client-color);border-radius:2px"></div> Client</div>
+        <div class="legend-row"><div class="legend-dot" style="background:var(--pharmacy-color);border-radius:2px"></div> Pharmacy</div>
+      </div>
+    </div>
+  </div>
+
+  <!-- MAIN -->
+  <div class="main">
+
+    <!-- STATS -->
+    <div class="stats-row" id="stats-row"></div>
+
+    <!-- FILTERS -->
+    <div class="filters-wrap" id="filters-wrap">
+      <div class="filter-row">
+        <span class="filter-row-label">Entity</span>
+        <button class="chip active" data-ftype="entity" data-fval="all" onclick="setFilter('entity','all',this)">All</button>
+        <button class="chip vyve" data-ftype="entity" data-fval="VYVE" onclick="setFilter('entity','VYVE',this)">VYVE</button>
+        <button class="chip infusive" data-ftype="entity" data-fval="Infusive" onclick="setFilter('entity','Infusive',this)">Infusive</button>
+      </div>
+      <div class="filter-row">
+        <span class="filter-row-label">Category</span>
+        <button class="chip active" data-ftype="category" data-fval="all" onclick="setFilter('category','all',this)">All</button>
+        <button class="chip vendor-chip" data-ftype="category" data-fval="vendor" onclick="setFilter('category','vendor',this)">Vendor</button>
+        <button class="chip client-chip" data-ftype="category" data-fval="client" onclick="setFilter('category','client',this)">Client</button>
+        <button class="chip pharmacy-chip" data-ftype="category" data-fval="pharmacy" onclick="setFilter('category','pharmacy',this)">Pharmacy</button>
+        <button class="chip" data-ftype="category" data-fval="clinical" onclick="setFilter('category','clinical',this)">Clinical</button>
+      </div>
+      <div class="filter-row vendor-subfilter" id="vendor-subfilter">
+        <span class="filter-row-label">Vendor</span>
+        <button class="chip active" data-ftype="vendor" data-fval="all" onclick="setFilter('vendor','all',this)">All</button>
+        <!-- populated by JS -->
+      </div>
+      <div class="filter-row">
+        <span class="filter-row-label">Urgency</span>
+        <button class="chip active" data-ftype="urgency" data-fval="all" onclick="setFilter('urgency','all',this)">All</button>
+        <button class="chip red" data-ftype="urgency" data-fval="red" onclick="setFilter('urgency','red',this)">Urgent</button>
+        <button class="chip yellow" data-ftype="urgency" data-fval="yellow" onclick="setFilter('urgency','yellow',this)">Pending</button>
+        <button class="chip green" data-ftype="urgency" data-fval="green" onclick="setFilter('urgency','green',this)">FYI</button>
+        <button class="chip" data-ftype="urgency" data-fval="done" onclick="setFilter('urgency','done',this)">Done</button>
+      </div>
+    </div>
+
+    <!-- ADD PANEL -->
+    <div class="add-panel" id="add-panel">
+      <div class="add-panel-title">Add open item</div>
+      <div class="form-grid cols3">
+        <div class="form-group">
+          <label>Entity</label>
+          <select id="new-entity">
+            <option value="VYVE">VYVE</option>
+            <option value="Infusive">Infusive</option>
+          </select>
+        </div>
+        <div class="form-group">
+          <label>Category</label>
+          <select id="new-category" onchange="updateVendorField()">
+            <option value="vendor">Vendor</option>
+            <option value="client">Client</option>
+            <option value="pharmacy">Pharmacy</option>
+            <option value="clinical">Clinical</option>
+            <option value="other">Other</option>
+          </select>
+        </div>
+        <div class="form-group">
+          <label>Urgency</label>
+          <select id="new-urgency">
+            <option value="red">🔴 Urgent</option>
+            <option value="yellow" selected>🟡 Pending</option>
+            <option value="green">🟢 FYI</option>
+          </select>
+        </div>
+      </div>
+      <div class="form-grid" id="vendor-field-row">
+        <div class="form-group">
+          <label>Vendor / Client / Pharmacy name</label>
+          <select id="new-vendor-select" onchange="handleVendorSelect(this)">
+            <option value="">— select preset —</option>
+          </select>
+        </div>
+        <div class="form-group">
+          <label>Or type custom name</label>
+          <input type="text" id="new-vendor-custom" placeholder="Custom name">
+        </div>
+      </div>
+      <div class="form-grid">
+        <div class="form-group" style="grid-column:1/-1">
+          <label>Title</label>
+          <input type="text" id="new-title" placeholder="Short descriptive title">
+        </div>
+      </div>
+      <div class="form-grid full">
+        <div class="form-group">
+          <label>Summary</label>
+          <textarea id="new-summary" placeholder="Context — 1 to 2 sentences"></textarea>
+        </div>
+      </div>
+      <div class="form-grid">
+        <div class="form-group">
+          <label>Action needed</label>
+          <input type="text" id="new-action" placeholder="What does he need to do?">
+        </div>
+        <div class="form-group">
+          <label>Source</label>
+          <select id="new-source">
+            <option value="gmail">Gmail — main</option>
+            <option value="gmail">Gmail — clinical</option>
+            <option value="slack">Slack</option>
+            <option value="other">Other</option>
+          </select>
+        </div>
+      </div>
+      <div class="form-grid full">
+        <div class="form-group">
+          <label>Link (optional)</label>
+          <input type="url" id="new-link" placeholder="https://...">
+        </div>
+      </div>
+      <div class="form-actions">
+        <button class="btn" onclick="toggleAdd()">Cancel</button>
+        <button class="btn btn-gold" onclick="addItem()">Add item</button>
+      </div>
+    </div>
+
+    <!-- ITEMS -->
+    <div id="items-list"></div>
+  </div>
+</div>
+
+<!-- EDIT MODAL -->
+<div class="modal-overlay" id="edit-modal" onclick="handleModalOverlayClick(event)">
+  <div class="modal">
+    <div class="modal-header">
+      <span class="modal-title">Edit item</span>
+      <button class="modal-close" onclick="closeEditModal()">✕</button>
+    </div>
+    <input type="hidden" id="edit-id">
+    <input type="hidden" id="edit-source-type">
+    <div class="form-grid cols3">
+      <div class="form-group">
+        <label>Entity</label>
+        <select id="edit-entity"><option value="VYVE">VYVE</option><option value="Infusive">Infusive</option></select>
+      </div>
+      <div class="form-group">
+        <label>Category</label>
+        <select id="edit-category" onchange="updateEditVendorField()">
+          <option value="vendor">Vendor</option><option value="client">Client</option>
+          <option value="pharmacy">Pharmacy</option><option value="clinical">Clinical</option><option value="other">Other</option>
+        </select>
+      </div>
+      <div class="form-group">
+        <label>Urgency</label>
+        <select id="edit-urgency">
+          <option value="red">🔴 Urgent</option><option value="yellow">🟡 Pending</option><option value="green">🟢 FYI</option>
+        </select>
+      </div>
+    </div>
+    <div class="form-grid" style="margin-top:12px">
+      <div class="form-group">
+        <label>Vendor / Client / Pharmacy</label>
+        <select id="edit-vendor-select" onchange="handleEditVendorSelect(this)"><option value="">— select preset —</option></select>
+      </div>
+      <div class="form-group">
+        <label>Or type custom name</label>
+        <input type="text" id="edit-vendor-custom" placeholder="Custom name">
+      </div>
+    </div>
+    <div class="form-grid full" style="margin-top:12px">
+      <div class="form-group">
+        <label>Title</label>
+        <input type="text" id="edit-title">
+      </div>
+    </div>
+    <div class="form-grid full" style="margin-top:12px">
+      <div class="form-group">
+        <label>Summary</label>
+        <textarea id="edit-summary"></textarea>
+      </div>
+    </div>
+    <div class="form-grid" style="margin-top:12px">
+      <div class="form-group">
+        <label>Action needed</label>
+        <input type="text" id="edit-action">
+      </div>
+      <div class="form-group">
+        <label>Status</label>
+        <select id="edit-status">
+          <option value="open">Open</option><option value="in-progress">In progress</option><option value="done">Done</option>
+        </select>
+      </div>
+    </div>
+    <div class="form-grid" style="margin-top:12px">
+      <div class="form-group">
+        <label>Source</label>
+        <select id="edit-source">
+          <option value="gmail">Gmail — main</option><option value="gmail-clinical">Gmail — clinical</option>
+          <option value="slack">Slack</option><option value="other">Other</option>
+        </select>
+      </div>
+      <div class="form-group">
+        <label>Link (optional)</label>
+        <input type="url" id="edit-link" placeholder="https://...">
+      </div>
+    </div>
+    <div class="modal-footer">
+      <button class="btn-danger" onclick="deleteItem()">Delete item</button>
+      <div style="display:flex;gap:8px">
+        <button class="btn" onclick="closeEditModal()">Cancel</button>
+        <button class="btn btn-gold" onclick="saveEdit()">Save changes</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<script>
+const DATA_URL = './data.json';
+let allItems = [];
+let calItems = [];
+let presetVendors = ["Influex","UPQODE","One Billion Media","Guide Post Marketing","SSRP","Podcasts"];
+let presetClients = ["iCryo","Guardian","Intervene MD","Hydrate IV Bar"];
+let presetPharmacies = ["Olympia","Ageless","Strive","Tandem","Wells","GenoGenix","Empower","Progress","McGuff"];
+let manualItems = [];
+let itemStatuses = {};
+
+// filters
+let activeFilters = { entity: 'all', category: 'all', vendor: 'all', urgency: 'all' };
+
+try { manualItems = JSON.parse(localStorage.getItem('manualItems') || '[]'); } catch(e){}
+try { itemStatuses = JSON.parse(localStorage.getItem('itemStatuses') || '{}'); } catch(e){}
+
+/* ── UTILS ── */
+function formatDate(iso) {
+  if (!iso) return '';
+  const d = new Date(iso), now = new Date();
+  const diff = Math.floor((now - d) / 60000);
+  if (diff < 60) return diff + 'm ago';
+  if (diff < 1440) return Math.floor(diff/60) + 'h ago';
+  return d.toLocaleDateString('en-US', { month: 'short', day: 'numeric' });
+}
+
+function getStatus(item) {
+  return itemStatuses[item.id] || item.status || 'open';
+}
+
+/* ── FILTERS ── */
+function setFilter(type, val, btn) {
+  activeFilters[type] = val;
+  // deactivate siblings
+  document.querySelectorAll(`[data-ftype="${type}"]`).forEach(b => b.classList.remove('active'));
+  btn.classList.add('active');
+  // show/hide vendor subfilter
+  const vsf = document.getElementById('vendor-subfilter');
+  if (type === 'category') {
+    vsf.classList.toggle('visible', val === 'vendor');
+    if (val !== 'vendor') activeFilters.vendor = 'all';
+  }
+  renderItems();
+}
+
+function buildVendorSubfilter(vendors) {
+  const row = document.getElementById('vendor-subfilter');
+  // keep the "all" chip, add vendor chips
+  const existing = row.querySelectorAll('[data-fval]:not([data-fval="all"])');
+  existing.forEach(e => e.remove());
+  vendors.forEach(v => {
+    const btn = document.createElement('button');
+    btn.className = 'chip vendor-chip';
+    btn.dataset.ftype = 'vendor';
+    btn.dataset.fval = v;
+    btn.textContent = v;
+    btn.onclick = () => setFilter('vendor', v, btn);
+    row.appendChild(btn);
+  });
+}
+
+/* ── FILTERING LOGIC ── */
+function matchesFilters(item) {
+  const status = getStatus(item);
+  if (activeFilters.urgency === 'done') return status === 'done';
+  if (activeFilters.urgency !== 'all' && item.urgency !== activeFilters.urgency) return false;
+  if (activeFilters.entity !== 'all' && item.entity !== activeFilters.entity) return false;
+  if (activeFilters.category !== 'all' && item.category !== activeFilters.category) return false;
+  if (activeFilters.vendor !== 'all') {
+    const v = item.vendor || '';
+    if (v !== activeFilters.vendor) return false;
+  }
+  return true;
+}
+
+/* ── RENDER STATS ── */
+function renderStats(items) {
+  const open = i => getStatus(i) !== 'done';
+  const r = items.filter(i => i.urgency==='red' && open(i)).length;
+  const y = items.filter(i => i.urgency==='yellow' && open(i)).length;
+  const g = items.filter(i => i.urgency==='green' && open(i)).length;
+  const done = items.filter(i => getStatus(i)==='done').length;
+  document.getElementById('stats-row').innerHTML = `
+    <div class="stat-card"><div class="stat-label">Urgent</div><div class="stat-num red">${r}</div></div>
+    <div class="stat-card"><div class="stat-label">Pending</div><div class="stat-num yellow">${y}</div></div>
+    <div class="stat-card"><div class="stat-label">FYI</div><div class="stat-num green">${g}</div></div>
+    <div class="stat-card"><div class="stat-label">Done today</div><div class="stat-num">${done}</div></div>
+  `;
+}
+
+/* ── ENTITY TAG HTML ── */
+function entityTag(item) {
+  let tags = '';
+  if (item.entity) {
+    const cls = item.entity === 'VYVE' ? 'tag-vyve' : 'tag-infusive';
+    tags += `<span class="tag ${cls}">${item.entity}</span>`;
+  }
+  if (item.categoryLabel) {
+    const catMap = { vendor:'tag-vendor', client:'tag-client', pharmacy:'tag-pharmacy', clinical:'tag-pharmacy' };
+    const cls = catMap[item.category] || '';
+    const label = item.vendor || item.categoryLabel;
+    tags += `<span class="tag ${cls}">${label}</span>`;
+  }
+  const srcCls = item.source === 'slack' ? 'tag-slack' : 'tag-gmail';
+  tags += `<span class="tag ${srcCls}">${item.sourceLabel || item.source}</span>`;
+  tags += `<span class="tag tag-time">${formatDate(item.received)}</span>`;
+  return tags;
+}
+
+/* ── RENDER ITEMS ── */
+function renderItems() {
+  const combined = [...allItems, ...manualItems];
+  const filtered = combined.filter(matchesFilters);
+  const groups = { red:[], yellow:[], green:[] };
+  filtered.forEach(i => { if (groups[i.urgency]) groups[i.urgency].push(i); });
+
+  const urgencyMeta = {
+    red: 'Urgent',
+    yellow: 'Pending',
+    green: 'FYI'
+  };
+
+  let html = '';
+  ['red','yellow','green'].forEach(u => {
+    const items = groups[u];
+    if (!items.length) return;
+    const openCount = items.filter(i => getStatus(i) !== 'done').length;
+    html += `<div class="urgency-group">
+      <div class="urgency-header">
+        <span class="urgency-label ${u}">${urgencyMeta[u]}</span>
+        <span class="urgency-count">${openCount} open · ${items.length} total</span>
+      </div>
+      <div class="gold-rule"></div>`;
+    items.forEach(item => {
+      const status = getStatus(item);
+      const isDone = status === 'done';
+      html += `
+      <div class="item-card ${u}${isDone?' done':''}">
+        <div class="item-body">
+          <button class="item-check${isDone?' checked':''}" onclick="toggleDone('${item.id}')"></button>
+          <div class="item-content">
+            <div class="item-title">${item.title}</div>
+            ${item.summary ? `<div class="item-summary">${item.summary}</div>` : ''}
+            ${item.actionNeeded ? `<div class="item-action">${item.actionNeeded}</div>` : ''}
+            <div class="item-tags">${entityTag(item)}</div>
+          </div>
+          <div class="item-actions">
+            <select class="status-sel" onchange="setStatus('${item.id}',this.value)">
+              <option value="open"${status==='open'?' selected':''}>Open</option>
+              <option value="in-progress"${status==='in-progress'?' selected':''}>In progress</option>
+              <option value="done"${status==='done'?' selected':''}>Done</option>
+            </select>
+            <button class="edit-btn" onclick="openEditModal('${item.id}')">Edit</button>
+            ${item.link ? `<a href="${item.link}" target="_blank" class="open-link">Open ↗</a>` : ''}
+          </div>
+        </div>
+      </div>`;
+    });
+    html += '</div>';
+  });
+
+  if (!html) html = '<div class="empty-state">No items match the current filters.</div>';
+  document.getElementById('items-list').innerHTML = html;
+}
+
+/* ── STATUS / DONE ── */
+function setStatus(id, val) {
+  itemStatuses[id] = val;
+  localStorage.setItem('itemStatuses', JSON.stringify(itemStatuses));
+  renderAll();
+}
+function toggleDone(id) {
+  itemStatuses[id] = getStatus({id,status:'open'}) === 'done' ? 'open' : 'done';
+  localStorage.setItem('itemStatuses', JSON.stringify(itemStatuses));
+  renderAll();
+}
+
+/* ── CALENDAR ── */
+function renderCalendar(items) {
+  let html = '';
+  items.forEach(item => {
+    const entityCls = item.entity === 'VYVE' ? 'tag-vyve' : 'tag-infusive';
+    html += `
+    <div class="cal-item">
+      <div class="cal-time">${item.time}</div>
+      <div class="cal-body">
+        <div class="cal-title">${item.title}</div>
+        <div class="cal-meta">${item.duration} · ${item.attendees}${item.location ? ' · '+item.location : ''}</div>
+        <div class="cal-tags">
+          ${item.entity ? `<span class="tag ${entityCls}" style="font-size:10px;padding:1px 7px">${item.entity}</span>` : ''}
+          ${item.prepNeeded && item.prepNote ? `<span class="cal-prep">⚠ ${item.prepNote}</span>` : ''}
+        </div>
+      </div>
+    </div>`;
+  });
+  document.getElementById('cal-list').innerHTML = html || '<div class="empty-state">No meetings today.</div>';
+}
+
+/* ── ADD ITEM ── */
+function toggleAdd() {
+  document.getElementById('add-panel').classList.toggle('open');
+}
+
+function updateVendorField() {
+  const cat = document.getElementById('new-category').value;
+  const sel = document.getElementById('new-vendor-select');
+  sel.innerHTML = '<option value="">— select preset —</option>';
+  let list = [];
+  if (cat === 'vendor') list = presetVendors;
+  else if (cat === 'client') list = presetClients;
+  else if (cat === 'pharmacy') list = presetPharmacies;
+  list.forEach(v => {
+    const o = document.createElement('option');
+    o.value = v; o.textContent = v;
+    sel.appendChild(o);
+  });
+}
+
+function handleVendorSelect(sel) {
+  if (sel.value) document.getElementById('new-vendor-custom').value = '';
+}
+
+function addItem() {
+  const title = document.getElementById('new-title').value.trim();
+  if (!title) { alert('Please enter a title.'); return; }
+  const category = document.getElementById('new-category').value;
+  const catLabels = { vendor:'Vendor', client:'Client', pharmacy:'Pharmacy', clinical:'Clinical', other:'Other' };
+  const vendorVal = document.getElementById('new-vendor-custom').value.trim()
+    || document.getElementById('new-vendor-select').value || null;
+  const srcEl = document.getElementById('new-source');
+  const item = {
+    id: 'manual-' + Date.now(),
+    urgency: document.getElementById('new-urgency').value,
+    entity: document.getElementById('new-entity').value,
+    category,
+    categoryLabel: catLabels[category] || 'Other',
+    vendor: vendorVal,
+    title,
+    summary: document.getElementById('new-summary').value.trim(),
+    source: srcEl.value,
+    sourceLabel: srcEl.options[srcEl.selectedIndex].text,
+    actionNeeded: document.getElementById('new-action').value.trim(),
+    link: document.getElementById('new-link').value.trim() || null,
+    received: new Date().toISOString(),
+    status: 'open',
+    manual: true
+  };
+  manualItems.unshift(item);
+  localStorage.setItem('manualItems', JSON.stringify(manualItems));
+  ['new-title','new-summary','new-action','new-link','new-vendor-custom'].forEach(id => {
+    document.getElementById(id).value = '';
+  });
+  toggleAdd();
+  renderAll();
+}
+
+/* ── EDIT MODAL ── */
+function findItem(id) {
+  return allItems.find(i => i.id === id) || manualItems.find(i => i.id === id) || null;
+}
+
+function isManual(id) {
+  return manualItems.some(i => i.id === id);
+}
+
+function openEditModal(id) {
+  const item = findItem(id);
+  if (!item) return;
+
+  document.getElementById('edit-id').value = id;
+  document.getElementById('edit-source-type').value = isManual(id) ? 'manual' : 'data';
+  document.getElementById('edit-entity').value = item.entity || 'VYVE';
+  document.getElementById('edit-urgency').value = item.urgency || 'yellow';
+  document.getElementById('edit-title').value = item.title || '';
+  document.getElementById('edit-summary').value = item.summary || '';
+  document.getElementById('edit-action').value = item.actionNeeded || '';
+  document.getElementById('edit-status').value = getStatus(item);
+  document.getElementById('edit-link').value = item.link || '';
+
+  // set source
+  const srcEl = document.getElementById('edit-source');
+  const srcVal = item.sourceLabel && item.sourceLabel.toLowerCase().includes('clinical') ? 'gmail-clinical' : (item.source || 'gmail');
+  srcEl.value = srcVal;
+
+  // IMPORTANT: set category first, THEN populate the vendor dropdown
+  document.getElementById('edit-category').value = item.category || 'vendor';
+  updateEditVendorField();
+
+  // Now match the vendor value
+  const vendorSel = document.getElementById('edit-vendor-select');
+  const custom = document.getElementById('edit-vendor-custom');
+  if (item.vendor) {
+    const opts = [...vendorSel.options].map(o => o.value);
+    if (opts.includes(item.vendor)) {
+      vendorSel.value = item.vendor;
+      custom.value = '';
+    } else {
+      vendorSel.value = '';
+      custom.value = item.vendor;
+    }
+  } else {
+    vendorSel.value = '';
+    custom.value = '';
+  }
+
+  document.getElementById('edit-modal').classList.add('open');
+}
+
+function closeEditModal() {
+  document.getElementById('edit-modal').classList.remove('open');
+}
+
+function handleModalOverlayClick(e) {
+  if (e.target === document.getElementById('edit-modal')) closeEditModal();
+}
+
+function updateEditVendorField() {
+  const cat = document.getElementById('edit-category').value;
+  const sel = document.getElementById('edit-vendor-select');
+  const currentVal = sel.value;
+  sel.innerHTML = '<option value="">— select preset —</option>';
+  let list = [];
+  if (cat === 'vendor') list = presetVendors;
+  else if (cat === 'client') list = presetClients;
+  else if (cat === 'pharmacy') list = presetPharmacies;
+  list.forEach(v => {
+    const o = document.createElement('option');
+    o.value = v; o.textContent = v;
+    if (v === currentVal) o.selected = true;
+    sel.appendChild(o);
+  });
+}
+
+function handleEditVendorSelect(sel) {
+  if (sel.value) document.getElementById('edit-vendor-custom').value = '';
+}
+
+function saveEdit() {
+  const id = document.getElementById('edit-id').value;
+  const catLabels = { vendor:'Vendor', client:'Client', pharmacy:'Pharmacy', clinical:'Clinical', other:'Other' };
+  const category = document.getElementById('edit-category').value;
+  const vendorVal = document.getElementById('edit-vendor-custom').value.trim()
+    || document.getElementById('edit-vendor-select').value || null;
+  const srcVal = document.getElementById('edit-source').value;
+  const srcLabels = { gmail:'Gmail — main', 'gmail-clinical':'Gmail — clinical', slack:'Slack', other:'Other' };
+  const newStatus = document.getElementById('edit-status').value;
+
+  const updates = {
+    entity: document.getElementById('edit-entity').value,
+    category,
+    categoryLabel: catLabels[category] || 'Other',
+    vendor: vendorVal,
+    urgency: document.getElementById('edit-urgency').value,
+    title: document.getElementById('edit-title').value.trim(),
+    summary: document.getElementById('edit-summary').value.trim(),
+    actionNeeded: document.getElementById('edit-action').value.trim(),
+    source: srcVal === 'gmail-clinical' ? 'gmail' : srcVal,
+    sourceLabel: srcLabels[srcVal] || 'Gmail — main',
+    link: document.getElementById('edit-link').value.trim() || null,
+  };
+
+  // apply status
+  itemStatuses[id] = newStatus;
+  localStorage.setItem('itemStatuses', JSON.stringify(itemStatuses));
+
+  // update in the right array
+  const manIdx = manualItems.findIndex(i => i.id === id);
+  if (manIdx !== -1) {
+    manualItems[manIdx] = { ...manualItems[manIdx], ...updates };
+    localStorage.setItem('manualItems', JSON.stringify(manualItems));
+  } else {
+    const dataIdx = allItems.findIndex(i => i.id === id);
+    if (dataIdx !== -1) {
+      allItems[dataIdx] = { ...allItems[dataIdx], ...updates };
+    }
+  }
+
+  // rebuild vendor subfilter in case a new vendor was typed
+  const vendorSet = new Set();
+  allItems.forEach(i => { if (i.vendor) vendorSet.add(i.vendor); });
+  manualItems.forEach(i => { if (i.vendor) vendorSet.add(i.vendor); });
+  buildVendorSubfilter([...vendorSet].sort());
+
+  closeEditModal();
+  renderAll();
+}
+
+function deleteItem() {
+  const id = document.getElementById('edit-id').value;
+  const manIdx = manualItems.findIndex(i => i.id === id);
+  if (manIdx !== -1) {
+    manualItems.splice(manIdx, 1);
+    localStorage.setItem('manualItems', JSON.stringify(manualItems));
+  } else {
+    const dataIdx = allItems.findIndex(i => i.id === id);
+    if (dataIdx !== -1) allItems.splice(dataIdx, 1);
+  }
+  delete itemStatuses[id];
+  localStorage.setItem('itemStatuses', JSON.stringify(itemStatuses));
+  closeEditModal();
+  renderAll();
+}
+
+/* ── FULL RENDER ── */
+function renderAll() {
+  const combined = [...allItems, ...manualItems];
+  renderStats(combined);
+  renderItems();
+}
+
+/* ── TOPBAR DATE ── */
+function setTopbarDate() {
+  document.getElementById('topbar-date').textContent =
+    new Date().toLocaleDateString('en-US', { weekday:'long', month:'long', day:'numeric', year:'numeric' });
+}
+
+/* ── INIT ── */
+async function init() {
+  setTopbarDate();
+  updateVendorField(); // populate Add form immediately with embedded presets
+  try {
+    const res = await fetch(DATA_URL + '?t=' + Date.now());
+    const data = await res.json();
+    allItems = data.items || [];
+    calItems = data.calendar || [];
+    presetVendors = data.vendors && data.vendors.length ? data.vendors : presetVendors;
+    presetClients = data.clients && data.clients.length ? data.clients : presetClients;
+    presetPharmacies = data.pharmacies && data.pharmacies.length ? data.pharmacies : presetPharmacies;
+
+    // gather all vendors from items for sub-filter
+    const vendorSet = new Set();
+    allItems.forEach(i => { if (i.vendor) vendorSet.add(i.vendor); });
+    manualItems.forEach(i => { if (i.vendor) vendorSet.add(i.vendor); });
+    buildVendorSubfilter([...vendorSet].sort());
+
+    if (data.lastUpdated) {
+      document.getElementById('last-updated-label').textContent =
+        'Updated ' + formatDate(data.lastUpdated);
+    }
+
+    // init vendor select in add form AFTER presets are loaded
+    updateVendorField();
+
+    renderCalendar(calItems);
+    renderAll();
+  } catch(e) {
+    document.getElementById('items-list').innerHTML =
+      '<div class="empty-state">Could not load data.json — make sure the file is in the same folder.</div>';
+    renderCalendar([]);
+    renderAll();
+  }
+}
+
+init();
+</script>
+</body>
+</html>

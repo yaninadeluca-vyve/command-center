@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-05-16T14:43:03.612488",
+  "lastUpdated": "2026-05-17T14:46:03.535416",
   "vendors": [
     "Influex",
     "UPQODE",
@@ -28,72 +28,21 @@
   "calendar": [],
   "items": [
     {
-      "id": "auto-20260516-1",
-      "urgency": "red",
-      "entity": "VYVE",
-      "category": "vendor",
-      "categoryLabel": "Vendor",
-      "vendor": "Shortwave",
-      "title": "Shortwave account downgraded to Free plan",
-      "summary": "The VYVE Wellness team account on Shortwave has been automatically downgraded to the Free plan, limiting AI usage and features.",
-      "source": "gmail",
-      "sourceLabel": "Gmail — VYVE",
-      "from": "notifications@shortwave.com",
-      "received": "2026-05-16T11:17:06+00:00",
-      "status": "open",
-      "link": "https://mail.google.com/mail/u/0/#inbox/19e3081166251efd",
-      "actionNeeded": "Review billing and decide whether to restore paid Shortwave plan for VYVE team."
-    },
-    {
-      "id": "auto-20260516-2",
+      "id": "auto-20260517-1",
       "urgency": "yellow",
-      "entity": "Infusive",
-      "category": "vendor",
-      "categoryLabel": "Vendor",
-      "vendor": "Greenwich",
-      "title": "Infusive GRX weekly report 05/08-05/14",
-      "summary": "Angelica from Greenwich Account Management sent the weekly Infusive GRX report for review with payment receipt to follow.",
-      "source": "gmail",
-      "sourceLabel": "Gmail — VYVE",
-      "from": "angelica@greenwichaccountmgt.com",
-      "received": "2026-05-15T21:38:45+00:00",
-      "status": "open",
-      "link": "https://mail.google.com/mail/u/0/#inbox/19e2d9401af5e892",
-      "actionNeeded": "Review attached Greenwich report for Infusive GRX week of 05/08-05/14."
-    },
-    {
-      "id": "auto-20260516-3",
-      "urgency": "green",
       "entity": "VYVE",
       "category": "vendor",
       "categoryLabel": "Vendor",
-      "vendor": "UPQODE",
-      "title": "UPQODE confirms email notification process for podcasts",
-      "summary": "UPQODE confirmed that email notification each time new podcast appearances are added to the spreadsheet works best for their team.",
+      "vendor": "Podcasts",
+      "title": "Create The Best Me podcast episode aired",
+      "summary": "Carmen Hecox forwarded thank you for podcast appearance. Episode aired May 14 at 7 PM PDT with social media assets and recordings available in shared folder.",
       "source": "gmail",
       "sourceLabel": "Gmail — VYVE",
-      "from": "valentin@upqode.com",
-      "received": "2026-05-15T18:24:04+00:00",
+      "from": "William Haas <will@vyvewellness.com>",
+      "received": "2026-05-16T18:55:53-04:00",
       "status": "open",
-      "link": "https://mail.google.com/mail/u/0/#inbox/19e2ce1cf89bc51e",
-      "actionNeeded": "No action needed — FYI on communication workflow with UPQODE."
-    },
-    {
-      "id": "auto-20260516-4",
-      "urgency": "green",
-      "entity": "VYVE",
-      "category": "vendor",
-      "categoryLabel": "Vendor",
-      "vendor": "Interview Valet",
-      "title": "Interview Valet forwarded Create The Best Me thank you",
-      "summary": "Christina from Interview Valet forwarded a thank-you email from Carmen Hecox regarding Dr. Haas's appearance on the 'Create The Best Me' podcast.",
-      "source": "gmail",
-      "sourceLabel": "Gmail — VYVE",
-      "from": "Christina@interviewvalet.com",
-      "received": "2026-05-15T16:13:45+00:00",
-      "status": "open",
-      "link": "https://mail.google.com/mail/u/0/#inbox/19e2c6af09978092",
-      "actionNeeded": "No action needed — FYI on positive podcast feedback."
+      "link": "https://mail.google.com/mail/u/0/#inbox/19e330169b1ff79b",
+      "actionNeeded": "Review podcast assets in OneDrive folder and consider sharing on VYVE social channels."
     }
   ]
 }

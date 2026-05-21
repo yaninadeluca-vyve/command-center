@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-05-20T19:36:11.460997",
+  "lastUpdated": "2026-05-21T18:16:08.144242",
   "vendors": [
     "Influex",
     "UPQODE",
@@ -28,55 +28,21 @@
   "calendar": [],
   "items": [
     {
-      "id": "auto-20260520-1",
+      "id": "auto-20260521-1",
       "urgency": "yellow",
       "entity": "VYVE",
-      "category": "vendor",
-      "categoryLabel": "Vendor",
-      "vendor": "INSiGHT CLA",
-      "title": "neuroPULSE pricing clarification needed",
-      "summary": "Monika is following up on the neuroPULSE device purchase after Dr. Deluca asked for pricing clarification on what the \"$4,699+\" includes. Needs response on whether to proceed.",
+      "category": "other",
+      "categoryLabel": "Other",
+      "vendor": null,
+      "title": "Sendspark subscription renewal decision needed",
+      "summary": "Sendspark subscription renews May 28. Will confirmed to proceed with renewal despite low usage.",
       "source": "gmail",
       "sourceLabel": "Gmail — VYVE",
-      "from": "Monika at INSiGHT CLA <monika@insightcla.com>",
-      "received": "2026-05-20T15:10:28+00:00",
+      "from": "William Haas",
+      "received": "2026-05-21T11:49:29-04:00",
       "status": "open",
-      "link": "https://mail.google.com/mail/u/0/#inbox/19e45f03f35f4c8a",
-      "actionNeeded": "Review pricing details and respond to Monika about whether to move forward with neuroPULSE purchase."
-    },
-    {
-      "id": "auto-20260520-2",
-      "urgency": "green",
-      "entity": "VYVE",
-      "category": "vendor",
-      "categoryLabel": "Vendor",
-      "vendor": "Pareto Talent",
-      "title": "Omi pendant shipping confirmed",
-      "summary": "Ivan confirmed the Omi pendant order has been placed and will send tracking number. Training completed yesterday and team is deciding on Google account setup approach.",
-      "source": "gmail",
-      "sourceLabel": "Gmail — VYVE",
-      "from": "Ivan Bunin <ivan@paretotalent.com>",
-      "received": "2026-05-19T21:08:47+00:00",
-      "status": "open",
-      "link": "https://mail.google.com/mail/u/0/#inbox/19e4211ff354114d",
-      "actionNeeded": "FYI only — wait for tracking number and watch for delivery at Charlotte office."
-    },
-    {
-      "id": "auto-20260520-3",
-      "urgency": "green",
-      "entity": "VYVE",
-      "category": "vendor",
-      "categoryLabel": "Vendor",
-      "vendor": "Interview Valet",
-      "title": "Create The Best Me content delivered",
-      "summary": "Christina delivered the repurposed content for the Create The Best Me podcast, available in the shared Google Drive folder.",
-      "source": "gmail",
-      "sourceLabel": "Gmail — VYVE",
-      "from": "Christina Pedersen <Christina@interviewvalet.com>",
-      "received": "2026-05-19T20:21:27+00:00",
-      "status": "open",
-      "link": "https://mail.google.com/mail/u/0/#inbox/19e41e71de78ede6",
-      "actionNeeded": "Review repurposed podcast content when convenient."
+      "link": "https://mail.google.com/mail/u/0/#inbox/19e4b3ae1310db91",
+      "actionNeeded": "Confirm Yanina proceeds with Sendspark renewal on May 28 or take final action to cancel."
     }
   ]
 }

@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-05-23T14:51:12.754481",
+  "lastUpdated": "2026-05-24T14:53:40.294988",
   "vendors": [
     "Influex",
     "UPQODE",
@@ -28,38 +28,55 @@
   "calendar": [],
   "items": [
     {
-      "id": "auto-20260523-1",
-      "urgency": "yellow",
+      "id": "auto-20260524-1",
+      "urgency": "red",
       "entity": "VYVE",
-      "category": "other",
-      "categoryLabel": "Other",
+      "category": "vendor",
+      "categoryLabel": "Vendor",
       "vendor": null,
-      "title": "Set up shared PTO calendar for Yanina",
-      "summary": "Yanina's Q3/Q4 Argentine holidays and PTO have been approved. Need to create a shared calendar for her out-of-office dates that can be toggled on/off.",
+      "title": "Complete ACH form for North Mill Equipment",
+      "summary": "North Mill Equipment Finance needs a completed ACH agreement form with a voided check from the new VYVE CLT checkbook to process May payment and update auto-pay.",
       "source": "gmail",
       "sourceLabel": "Gmail — VYVE",
       "from": "William Haas",
-      "received": "2026-05-23T11:02:26Z",
+      "received": "2026-05-23T13:58:56-04:00",
       "status": "open",
-      "link": "https://mail.google.com/mail/u/0/#inbox/19e54805cf0e1fdd",
-      "actionNeeded": "Set up a shared calendar with Yanina for her approved PTO dates that can be toggled on your calendar."
+      "link": "https://mail.google.com/mail/u/0/#inbox/19e55fe13343232a",
+      "actionNeeded": "Sign the ACH form, attach a voided check from new VYVE CLT checkbook, and return to North Mill Equipment Finance."
     },
     {
-      "id": "auto-20260523-2",
-      "urgency": "green",
-      "entity": "Infusive",
-      "category": "pharmacy",
-      "categoryLabel": "Pharmacy",
+      "id": "auto-20260524-2",
+      "urgency": "red",
+      "entity": "VYVE",
+      "category": "vendor",
+      "categoryLabel": "Vendor",
       "vendor": null,
-      "title": "Greenwich weekly GRX reports received",
-      "summary": "Greenwich Account Management submitted the weekly Infusive GRX reports for 05/15/26-05/21/26. Payment receipt to follow.",
+      "title": "Connect new bank account for BTL payment",
+      "summary": "MMP Capital payment of $5,177.54 for BTL Industries Emface equipment is past due (was due 5/15). Bank flagged original account; need to connect new account to make payment.",
       "source": "gmail",
       "sourceLabel": "Gmail — VYVE",
-      "from": "Angelica Macedo",
-      "received": "2026-05-22T21:12:40Z",
+      "from": "William Haas",
+      "received": "2026-05-23T14:00:34-04:00",
       "status": "open",
-      "link": "https://mail.google.com/mail/u/0/#inbox/19e5188857353340",
-      "actionNeeded": "Review attached report if needed; no immediate action required."
+      "link": "https://mail.google.com/mail/u/0/#inbox/19e55ff8bbdbd59f",
+      "actionNeeded": "Get details from Jack Miller to connect new bank account and process overdue payment."
+    },
+    {
+      "id": "auto-20260524-3",
+      "urgency": "green",
+      "entity": "VYVE",
+      "category": "vendor",
+      "categoryLabel": "Vendor",
+      "vendor": "Podcasts",
+      "title": "Aging Well Podcast episode links available",
+      "summary": "Jeff Armstrong shared links to Dr. Haas's podcast episode and clips. Episode goes public May 31st on all platforms.",
+      "source": "gmail",
+      "sourceLabel": "Gmail — VYVE",
+      "from": "William Haas",
+      "received": "2026-05-23T14:01:10-04:00",
+      "status": "open",
+      "link": "https://mail.google.com/mail/u/0/#inbox/19e560019b6fc88c",
+      "actionNeeded": "Review episode links for promotional planning ahead of May 31st public release."
     }
   ]
 }

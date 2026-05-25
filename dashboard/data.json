@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-05-24T14:53:40.294988",
+  "lastUpdated": "2026-05-25T17:22:57.694607",
   "vendors": [
     "Influex",
     "UPQODE",
@@ -26,57 +26,5 @@
     "McGuff"
   ],
   "calendar": [],
-  "items": [
-    {
-      "id": "auto-20260524-1",
-      "urgency": "red",
-      "entity": "VYVE",
-      "category": "vendor",
-      "categoryLabel": "Vendor",
-      "vendor": null,
-      "title": "Complete ACH form for North Mill Equipment",
-      "summary": "North Mill Equipment Finance needs a completed ACH agreement form with a voided check from the new VYVE CLT checkbook to process May payment and update auto-pay.",
-      "source": "gmail",
-      "sourceLabel": "Gmail — VYVE",
-      "from": "William Haas",
-      "received": "2026-05-23T13:58:56-04:00",
-      "status": "open",
-      "link": "https://mail.google.com/mail/u/0/#inbox/19e55fe13343232a",
-      "actionNeeded": "Sign the ACH form, attach a voided check from new VYVE CLT checkbook, and return to North Mill Equipment Finance."
-    },
-    {
-      "id": "auto-20260524-2",
-      "urgency": "red",
-      "entity": "VYVE",
-      "category": "vendor",
-      "categoryLabel": "Vendor",
-      "vendor": null,
-      "title": "Connect new bank account for BTL payment",
-      "summary": "MMP Capital payment of $5,177.54 for BTL Industries Emface equipment is past due (was due 5/15). Bank flagged original account; need to connect new account to make payment.",
-      "source": "gmail",
-      "sourceLabel": "Gmail — VYVE",
-      "from": "William Haas",
-      "received": "2026-05-23T14:00:34-04:00",
-      "status": "open",
-      "link": "https://mail.google.com/mail/u/0/#inbox/19e55ff8bbdbd59f",
-      "actionNeeded": "Get details from Jack Miller to connect new bank account and process overdue payment."
-    },
-    {
-      "id": "auto-20260524-3",
-      "urgency": "green",
-      "entity": "VYVE",
-      "category": "vendor",
-      "categoryLabel": "Vendor",
-      "vendor": "Podcasts",
-      "title": "Aging Well Podcast episode links available",
-      "summary": "Jeff Armstrong shared links to Dr. Haas's podcast episode and clips. Episode goes public May 31st on all platforms.",
-      "source": "gmail",
-      "sourceLabel": "Gmail — VYVE",
-      "from": "William Haas",
-      "received": "2026-05-23T14:01:10-04:00",
-      "status": "open",
-      "link": "https://mail.google.com/mail/u/0/#inbox/19e560019b6fc88c",
-      "actionNeeded": "Review episode links for promotional planning ahead of May 31st public release."
-    }
-  ]
+  "items": []
 }

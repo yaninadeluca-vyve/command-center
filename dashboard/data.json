@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-05-25T17:22:57.694607",
+  "lastUpdated": "2026-05-26T19:29:42.651186",
   "vendors": [
     "Influex",
     "UPQODE",
@@ -26,5 +26,40 @@
     "McGuff"
   ],
   "calendar": [],
-  "items": []
+  "items": [
+    {
+      "id": "auto-20260526-1",
+      "urgency": "yellow",
+      "entity": "Infusive",
+      "category": "vendor",
+      "categoryLabel": "Vendor",
+      "vendor": "Influex",
+      "title": "Infusive Platform Page Copy Call Rescheduled",
+      "summary": "Meeting rescheduled to June 3 per Dr. Will's request. Influex needs this call to scope and quote work for new Platform page direction.",
+      "source": "gmail",
+      "sourceLabel": "Gmail — VYVE",
+      "from": "Deonelene Villegas",
+      "received": "2026-05-26T11:02:02+00:00",
+      "status": "open",
+      "link": "https://mail.google.com/mail/u/0/#inbox/19e63f2ea6155c3a",
+      "actionNeeded": "Confirm availability for June 3 copy call with Influex team."
+    },
+    {
+      "id": "auto-20260526-2",
+      "urgency": "yellow",
+      "entity": "VYVE",
+      "category": "vendor",
+      "categoryLabel": "Vendor",
+      "vendor": null,
+      "title": "MyOutDesk Follow-up on Services Decision",
+      "summary": "Matt Garcia requesting update on whether VYVE is still considering their staffing services. Needs response to move forward or close file.",
+      "source": "gmail",
+      "sourceLabel": "Gmail — VYVE",
+      "from": "Matt Garcia",
+      "received": "2026-05-26T08:35:02-07:00",
+      "status": "open",
+      "link": "https://mail.google.com/mail/u/0/#inbox/19e64ed0dd1732b2",
+      "actionNeeded": "Reply to Matt Garcia with decision on MyOutDesk services (move forward or decline)."
+    }
+  ]
 }

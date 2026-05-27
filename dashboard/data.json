@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-05-26T19:29:42.651186",
+  "lastUpdated": "2026-05-27T19:35:16.584563",
   "vendors": [
     "Influex",
     "UPQODE",
@@ -28,38 +28,38 @@
   "calendar": [],
   "items": [
     {
-      "id": "auto-20260526-1",
-      "urgency": "yellow",
-      "entity": "Infusive",
-      "category": "vendor",
-      "categoryLabel": "Vendor",
-      "vendor": "Influex",
-      "title": "Infusive Platform Page Copy Call Rescheduled",
-      "summary": "Meeting rescheduled to June 3 per Dr. Will's request. Influex needs this call to scope and quote work for new Platform page direction.",
-      "source": "gmail",
-      "sourceLabel": "Gmail — VYVE",
-      "from": "Deonelene Villegas",
-      "received": "2026-05-26T11:02:02+00:00",
-      "status": "open",
-      "link": "https://mail.google.com/mail/u/0/#inbox/19e63f2ea6155c3a",
-      "actionNeeded": "Confirm availability for June 3 copy call with Influex team."
-    },
-    {
-      "id": "auto-20260526-2",
+      "id": "auto-20260527-1",
       "urgency": "yellow",
       "entity": "VYVE",
       "category": "vendor",
       "categoryLabel": "Vendor",
       "vendor": null,
-      "title": "MyOutDesk Follow-up on Services Decision",
-      "summary": "Matt Garcia requesting update on whether VYVE is still considering their staffing services. Needs response to move forward or close file.",
+      "title": "Past Due Payment - Equipment Lease Account Switch",
+      "summary": "MMP Capital payment of $5,177.54 for BTL Emface equipment is past due. Bank account was locked due to fraud flag. Olivia completed forms to switch accounts and is waiting for Jack to confirm how to send them.",
       "source": "gmail",
       "sourceLabel": "Gmail — VYVE",
-      "from": "Matt Garcia",
-      "received": "2026-05-26T08:35:02-07:00",
+      "from": "Jack Miller",
+      "received": "2026-05-27T19:09:31Z",
       "status": "open",
-      "link": "https://mail.google.com/mail/u/0/#inbox/19e64ed0dd1732b2",
-      "actionNeeded": "Reply to Matt Garcia with decision on MyOutDesk services (move forward or decline)."
+      "link": "https://mail.google.com/mail/u/0/#inbox/19e6ad7d826222eb",
+      "actionNeeded": "Ensure Olivia sends completed forms and voided check to Jack Miller to resolve past due payment."
+    },
+    {
+      "id": "auto-20260527-2",
+      "urgency": "yellow",
+      "entity": "VYVE",
+      "category": "clinical",
+      "categoryLabel": "Clinical",
+      "vendor": null,
+      "title": "Marteena Contract - Signature and W-8 BEN Required",
+      "summary": "Updated employment contract for Marteena with compensation and promotion sections. Requires signed W-8 BEN form and contract to be added to HR folder. Work schedule is 10am-6pm EST with 2x monthly Saturday cover.",
+      "source": "gmail",
+      "sourceLabel": "Gmail — VYVE",
+      "from": "William Haas",
+      "received": "2026-05-27T00:24:06Z",
+      "status": "open",
+      "link": "https://mail.google.com/mail/u/0/#inbox/19e66d1cbdf4819e",
+      "actionNeeded": "Review updated Marteena contract and ensure Olivia obtains signed W-8 BEN form and contract for HR folder."
     }
   ]
 }

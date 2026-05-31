@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-05-30T14:56:45.690069",
+  "lastUpdated": "2026-05-31T15:52:49.559432",
   "vendors": [
     "Influex",
     "UPQODE",
@@ -26,40 +26,5 @@
     "McGuff"
   ],
   "calendar": [],
-  "items": [
-    {
-      "id": "auto-20260530-1",
-      "urgency": "yellow",
-      "entity": "VYVE",
-      "category": "vendor",
-      "categoryLabel": "Vendor",
-      "vendor": null,
-      "title": "ACH form needed for Emface equipment financing",
-      "summary": "MMP Capital requires a separate ACH authorization form for the Emface agreement (distinct from North Mill). Team is handling but needs completion.",
-      "source": "gmail",
-      "sourceLabel": "Gmail — VYVE",
-      "from": "Jack Miller",
-      "received": "2026-05-29T20:27:53+00:00",
-      "status": "open",
-      "link": "https://mail.google.com/mail/u/0/#inbox/19e756c3fe4e866f",
-      "actionNeeded": "Ensure Olivia/Yanina complete the ACH form for Emface agreement with voided check."
-    },
-    {
-      "id": "auto-20260530-2",
-      "urgency": "green",
-      "entity": "Infusive",
-      "category": "pharmacy",
-      "categoryLabel": "Pharmacy",
-      "vendor": null,
-      "title": "Infusive GRX weekly report available for review",
-      "summary": "Greenwich Account Management sent the weekly report for 05/22-05/28. Payment receipt to follow.",
-      "source": "gmail",
-      "sourceLabel": "Gmail — VYVE",
-      "from": "Angelica Macedo",
-      "received": "2026-05-29T17:54:58-05:00",
-      "status": "open",
-      "link": "https://mail.google.com/mail/u/0/#inbox/19e75f29344f104e",
-      "actionNeeded": "Review attached Greenwich report if needed; informational."
-    }
-  ]
+  "items": []
 }

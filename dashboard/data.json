@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-05-31T15:52:49.559432",
+  "lastUpdated": "2026-06-01T22:18:54.971155",
   "vendors": [
     "Influex",
     "UPQODE",
@@ -26,5 +26,74 @@
     "McGuff"
   ],
   "calendar": [],
-  "items": []
+  "items": [
+    {
+      "id": "auto-20260601-1",
+      "urgency": "yellow",
+      "entity": "Infusive",
+      "category": "vendor",
+      "categoryLabel": "Vendor",
+      "vendor": "2 Market Media",
+      "title": "Reschedule call with Elizabeth Hoyt",
+      "summary": "Elizabeth Hoyt from 2 Market Media needs to reschedule today's call due to travel delays. Dr. Haas said he'd work with EA to find Friday availability.",
+      "source": "gmail",
+      "sourceLabel": "Gmail — VYVE",
+      "from": "Elizabeth Hoyt",
+      "received": "2026-06-01T16:10:41-04:00",
+      "status": "open",
+      "link": "https://mail.google.com/mail/u/0/#inbox/19e84cfa82cd57c1",
+      "actionNeeded": "Coordinate with EA to schedule Friday meeting with Elizabeth Hoyt."
+    },
+    {
+      "id": "auto-20260601-2",
+      "urgency": "green",
+      "entity": "Infusive",
+      "category": "vendor",
+      "categoryLabel": "Vendor",
+      "vendor": "SSRP",
+      "title": "SSRP Phoenix hotel confirmation update",
+      "summary": "SSRP Events confirmed hotel reservation email is now will@goinfusive.com and may take 24 hours to reflect. Flight itinerary previously provided.",
+      "source": "gmail",
+      "sourceLabel": "Gmail — VYVE",
+      "from": "Yanina Deluca",
+      "received": "2026-06-01T13:56:30-03:00",
+      "status": "open",
+      "link": "https://mail.google.com/mail/u/0/#inbox/19e841dd04339798",
+      "actionNeeded": "No action needed; FYI that hotel email address was updated."
+    },
+    {
+      "id": "auto-20260601-3",
+      "urgency": "yellow",
+      "entity": "Infusive",
+      "category": "other",
+      "categoryLabel": "Other",
+      "vendor": null,
+      "title": "PWC travel coordination for Ryan and Brittany",
+      "summary": "Dr. Haas asked Yanina to coordinate hotels and flights to PWC for Ryan and Brittany on the Infusive team. Darren and Lauren's rooms will be kept.",
+      "source": "gmail",
+      "sourceLabel": "Gmail — VYVE",
+      "from": "Will Haas",
+      "received": "2026-06-01T12:00:19-04:00",
+      "status": "open",
+      "link": "https://mail.google.com/mail/u/0/#inbox/19e83ea57b8a118a",
+      "actionNeeded": "Ensure Yanina coordinates travel arrangements for Ryan and Brittany to PWC."
+    },
+    {
+      "id": "auto-20260601-4",
+      "urgency": "green",
+      "entity": "VYVE",
+      "category": "other",
+      "categoryLabel": "Other",
+      "vendor": null,
+      "title": "Lilian Capote interview scheduled June 8",
+      "summary": "Lilian Capote confirmed 9:30am works for her in-person interview on June 8th at VYVE.",
+      "source": "gmail",
+      "sourceLabel": "Gmail — VYVE",
+      "from": "lilian Capote",
+      "received": "2026-06-01T11:14:44-04:00",
+      "status": "open",
+      "link": "https://mail.google.com/mail/u/0/#inbox/19e83c0953318767",
+      "actionNeeded": "No action needed; interview scheduled and confirmed."
+    }
+  ]
 }

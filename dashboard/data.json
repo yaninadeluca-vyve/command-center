@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-06-03T21:41:12.746614",
+  "lastUpdated": "2026-06-04T19:33:44.845732",
   "vendors": [
     "Influex",
     "UPQODE",
@@ -26,74 +26,5 @@
     "McGuff"
   ],
   "calendar": [],
-  "items": [
-    {
-      "id": "auto-20260603-1",
-      "urgency": "yellow",
-      "entity": "VYVE",
-      "category": "clinical",
-      "categoryLabel": "Clinical",
-      "vendor": null,
-      "title": "Collaborating Agreement documents shared by Dr. William Haas",
-      "summary": "Dr. William Haas sent collaborating agreement and meeting notes following a call. Documents need review.",
-      "source": "gmail",
-      "sourceLabel": "Gmail — VYVE",
-      "from": "William Haas",
-      "received": "2026-06-03T16:22:04-04:00",
-      "status": "open",
-      "link": "https://mail.google.com/mail/u/0/#inbox/19e8f26abf8e067c",
-      "actionNeeded": "Review collaborating agreement and meeting notes shared by Dr. Haas."
-    },
-    {
-      "id": "auto-20260603-2",
-      "urgency": "yellow",
-      "entity": "Infusive",
-      "category": "vendor",
-      "categoryLabel": "Vendor",
-      "vendor": "Influex",
-      "title": "Infusive Platform Page copy call scheduled June 10",
-      "summary": "Influex scheduled a copy call for June 10 at 4pm to discuss new direction on Infusive's Platform page and enable scoping and quoting.",
-      "source": "gmail",
-      "sourceLabel": "Gmail — VYVE",
-      "from": "Deonelene Villegas",
-      "received": "2026-06-03T17:19:59+00:00",
-      "status": "open",
-      "link": "https://mail.google.com/mail/u/0/#inbox/19e8e7fcbe1c0eea",
-      "actionNeeded": "Confirm availability for June 10 copy call to discuss Infusive platform page updates."
-    },
-    {
-      "id": "auto-20260603-3",
-      "urgency": "green",
-      "entity": "VYVE",
-      "category": "vendor",
-      "categoryLabel": "Vendor",
-      "vendor": "UPQODE",
-      "title": "UPQODE podcast added to VYVE Media Page",
-      "summary": "UPQODE completed adding The Aging Well Podcast to the VYVE Media Page and it is now live.",
-      "source": "gmail",
-      "sourceLabel": "Gmail — VYVE",
-      "from": "Olha Hutsman",
-      "received": "2026-06-03T11:46:34+03:00",
-      "status": "open",
-      "link": "https://mail.google.com/mail/u/0/#inbox/19e8caa58e50b485",
-      "actionNeeded": "Review the updated Media Page if needed; no immediate action required."
-    },
-    {
-      "id": "auto-20260603-4",
-      "urgency": "yellow",
-      "entity": "VYVE",
-      "category": "vendor",
-      "categoryLabel": "Vendor",
-      "vendor": "One Billion Media",
-      "title": "2 Market Media meeting rescheduled to June 8",
-      "summary": "Elizabeth Hoyt from 2 Market Media rescheduled the call to Monday, June 8 at 9am EST for business development discussion.",
-      "source": "gmail",
-      "sourceLabel": "Gmail — VYVE",
-      "from": "Elizabeth Hoyt",
-      "received": "2026-06-02T18:49:52-04:00",
-      "status": "open",
-      "link": "https://mail.google.com/mail/u/0/#inbox/19e8a87ca5dec4d2",
-      "actionNeeded": "Attend or confirm attendance for June 8 meeting with 2 Market Media."
-    }
-  ]
+  "items": []
 }

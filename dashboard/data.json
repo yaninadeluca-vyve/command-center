@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-06-04T19:33:44.845732",
+  "lastUpdated": "2026-06-05T18:17:57.787147",
   "vendors": [
     "Influex",
     "UPQODE",
@@ -26,5 +26,23 @@
     "McGuff"
   ],
   "calendar": [],
-  "items": []
+  "items": [
+    {
+      "id": "auto-20260605-1",
+      "urgency": "yellow",
+      "entity": "Infusive",
+      "category": "vendor",
+      "categoryLabel": "Vendor",
+      "vendor": null,
+      "title": "Stone Systems alarm form needs completion",
+      "summary": "Adam Morley is requesting completion of a new customer form to set up alarm account preferences for Stone Systems.",
+      "source": "gmail",
+      "sourceLabel": "Gmail — VYVE",
+      "from": "Will Haas",
+      "received": "2026-06-05T11:25:02-04:00",
+      "status": "open",
+      "link": "https://mail.google.com/mail/u/0/#inbox/19e98637db744a94",
+      "actionNeeded": "Delegate form completion to Yanina or appropriate staff member."
+    }
+  ]
 }

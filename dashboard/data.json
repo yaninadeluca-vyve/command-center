@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-06-05T18:17:57.787147",
+  "lastUpdated": "2026-06-06T15:53:48.819410",
   "vendors": [
     "Influex",
     "UPQODE",
@@ -28,21 +28,21 @@
   "calendar": [],
   "items": [
     {
-      "id": "auto-20260605-1",
+      "id": "auto-20260606-1",
       "urgency": "yellow",
       "entity": "Infusive",
-      "category": "vendor",
-      "categoryLabel": "Vendor",
+      "category": "pharmacy",
+      "categoryLabel": "Pharmacy",
       "vendor": null,
-      "title": "Stone Systems alarm form needs completion",
-      "summary": "Adam Morley is requesting completion of a new customer form to set up alarm account preferences for Stone Systems.",
+      "title": "Greenwich weekly report received",
+      "summary": "Angelica sent the weekly GRX report for 05/29-06/04. Payment receipt to follow.",
       "source": "gmail",
       "sourceLabel": "Gmail — VYVE",
-      "from": "Will Haas",
-      "received": "2026-06-05T11:25:02-04:00",
+      "from": "angelica@greenwichaccountmgt.com",
+      "received": "2026-06-05T15:47:57-05:00",
       "status": "open",
-      "link": "https://mail.google.com/mail/u/0/#inbox/19e98637db744a94",
-      "actionNeeded": "Delegate form completion to Yanina or appropriate staff member."
+      "link": "https://mail.google.com/mail/u/0/#inbox/19e998ab39d60829",
+      "actionNeeded": "Review the attached Greenwich report for the week of 05/29-06/04."
     }
   ]
 }

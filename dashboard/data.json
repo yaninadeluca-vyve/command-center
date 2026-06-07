@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-06-06T15:53:48.819410",
+  "lastUpdated": "2026-06-07T15:54:17.721910",
   "vendors": [
     "Influex",
     "UPQODE",
@@ -28,21 +28,38 @@
   "calendar": [],
   "items": [
     {
-      "id": "auto-20260606-1",
+      "id": "auto-20260607-1",
       "urgency": "yellow",
-      "entity": "Infusive",
-      "category": "pharmacy",
-      "categoryLabel": "Pharmacy",
+      "entity": "VYVE",
+      "category": "clinical",
+      "categoryLabel": "Clinical",
       "vendor": null,
-      "title": "Greenwich weekly report received",
-      "summary": "Angelica sent the weekly GRX report for 05/29-06/04. Payment receipt to follow.",
+      "title": "Multiple membership payments pending",
+      "summary": "Four membership payment notifications received from VYVE Charlotte, indicating pending patient payments that may need follow-up or system review.",
       "source": "gmail",
       "sourceLabel": "Gmail — VYVE",
-      "from": "angelica@greenwichaccountmgt.com",
-      "received": "2026-06-05T15:47:57-05:00",
+      "from": "VYVE Charlotte",
+      "received": "2026-06-07T12:15:11+00:00",
       "status": "open",
-      "link": "https://mail.google.com/mail/u/0/#inbox/19e998ab39d60829",
-      "actionNeeded": "Review the attached Greenwich report for the week of 05/29-06/04."
+      "link": "https://mail.google.com/mail/u/0/#inbox/19ea2022ccb2bfc8",
+      "actionNeeded": "Review pending membership payments and determine if action is needed on payment processing or patient outreach."
+    },
+    {
+      "id": "auto-20260607-2",
+      "urgency": "yellow",
+      "entity": "VYVE",
+      "category": "other",
+      "categoryLabel": "Other",
+      "vendor": null,
+      "title": "Fellow Team trial expiring soon",
+      "summary": "The Fellow Team trial subscription is about to expire and may need renewal decision or cancellation.",
+      "source": "gmail",
+      "sourceLabel": "Gmail — VYVE",
+      "from": "Fellow",
+      "received": "2026-06-06T22:00:30+00:00",
+      "status": "open",
+      "link": "https://mail.google.com/mail/u/0/#inbox/19e9ef3b509e6562",
+      "actionNeeded": "Decide whether to renew or cancel the Fellow Team subscription before trial expires."
     }
   ]
 }

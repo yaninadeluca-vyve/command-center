@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-06-09T18:34:17.681890",
+  "lastUpdated": "2026-06-10T19:56:04.224662",
   "vendors": [
     "Influex",
     "UPQODE",
@@ -28,55 +28,38 @@
   "calendar": [],
   "items": [
     {
-      "id": "auto-20260609-1",
+      "id": "auto-20260610-1",
       "urgency": "yellow",
+      "entity": "VYVE",
+      "category": "vendor",
+      "categoryLabel": "Vendor",
+      "vendor": "Stone Security",
+      "title": "Security install invoice correction and alarm permit",
+      "summary": "Stone Security sent a corrected installation invoice (original was missing tax). Monitoring/hosting invoice coming tomorrow. Still awaiting confirmation on city alarm permit status.",
+      "source": "gmail",
+      "sourceLabel": "Gmail — VYVE",
+      "from": "Adam Morley <adam@stonesystems.tech>",
+      "received": "2026-06-10T17:35:39+00:00",
+      "status": "open",
+      "link": "https://mail.google.com/mail/u/0/#inbox/19eb29ad71e091ab",
+      "actionNeeded": "Confirm alarm permit status and review corrected installation invoice."
+    },
+    {
+      "id": "auto-20260610-2",
+      "urgency": "green",
       "entity": "VYVE",
       "category": "vendor",
       "categoryLabel": "Vendor",
       "vendor": "UPQODE",
-      "title": "Confirm social media assets sent to Upcode",
-      "summary": "Interview Valet delivered social media assets for 'Aging Well' content. Dr. Haas is asking if these have been forwarded to UPQODE yet.",
+      "title": "Elite Expert Insider podcast added to Media page",
+      "summary": "UPQODE has successfully added the Elite Expert Insider podcast to the VYVE Media page and is requesting review confirmation.",
       "source": "gmail",
       "sourceLabel": "Gmail — VYVE",
-      "from": "William Haas",
-      "received": "2026-06-09T14:09:08-04:00",
+      "from": "Olha Hutsman <olha@upqode.com>",
+      "received": "2026-06-10T11:22:14+03:00",
       "status": "open",
-      "link": "https://mail.google.com/mail/u/0/#inbox/19ead938079c2015",
-      "actionNeeded": "Confirm whether social media assets were sent to UPQODE."
-    },
-    {
-      "id": "auto-20260609-2",
-      "urgency": "yellow",
-      "entity": "VYVE",
-      "category": "vendor",
-      "categoryLabel": "Vendor",
-      "vendor": null,
-      "title": "Review and respond to 2 Market Media proposal",
-      "summary": "Elizabeth Hoyt from 2 Market Media sent a partnership proposal focused on thought leadership, authority positioning, speaking platform, and media visibility following their discovery call.",
-      "source": "gmail",
-      "sourceLabel": "Gmail — VYVE",
-      "from": "Elizabeth Hoyt",
-      "received": "2026-06-09T10:19:43-04:00",
-      "status": "open",
-      "link": "https://mail.google.com/mail/u/0/#inbox/19eacc13474edb66",
-      "actionNeeded": "Review the Discovery Memo and respond with questions or next steps."
-    },
-    {
-      "id": "auto-20260609-3",
-      "urgency": "yellow",
-      "entity": "VYVE",
-      "category": "other",
-      "categoryLabel": "Other",
-      "vendor": null,
-      "title": "Follow-up on AI recorder transcript storage question",
-      "summary": "Dr. Haas asked Ivan Bunin where to store transcripts from Fellow.ai recorder in his Second Brain setup.",
-      "source": "gmail",
-      "sourceLabel": "Gmail — VYVE",
-      "from": "William Haas",
-      "received": "2026-06-08T20:59:36-04:00",
-      "status": "open",
-      "link": "https://mail.google.com/mail/u/0/#inbox/19ea9e490d4ab183",
-      "actionNeeded": "Review Ivan's response when received or follow up if needed."
+      "link": "https://mail.google.com/mail/u/0/#inbox/19eb0a08c74d6e9a",
+      "actionNeeded": "Review the updated Media page to confirm podcast display is acceptable."
     }
   ]
 }

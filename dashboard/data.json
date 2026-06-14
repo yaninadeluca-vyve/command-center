@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-06-13T16:04:47.659652",
+  "lastUpdated": "2026-06-14T13:00:51.717401",
   "vendors": [
     "Influex",
     "UPQODE",
@@ -26,74 +26,5 @@
     "McGuff"
   ],
   "calendar": [],
-  "items": [
-    {
-      "id": "auto-20260613-1",
-      "urgency": "yellow",
-      "entity": "VYVE",
-      "category": "vendor",
-      "categoryLabel": "Vendor",
-      "vendor": null,
-      "title": "AI Implementation Strategy Session scheduled June 18",
-      "summary": "Meeting scheduled for Thursday, June 18 at 1pm with joe@growthmastery.ai, Will Haas, Olivia Thornburg, and Yanina Deluca to discuss AI implementation strategy.",
-      "source": "gmail",
-      "sourceLabel": "Gmail — VYVE",
-      "from": "joe@growthmastery.ai",
-      "received": "2026-06-12T22:15:09+00:00",
-      "status": "open",
-      "link": "https://mail.google.com/mail/u/0/#inbox/19ebde747bd11736",
-      "actionNeeded": "Attend or confirm attendance for AI strategy session on June 18."
-    },
-    {
-      "id": "auto-20260613-2",
-      "urgency": "yellow",
-      "entity": "Infusive",
-      "category": "pharmacy",
-      "categoryLabel": "Pharmacy",
-      "vendor": null,
-      "title": "Greenwich Infusive GRX Report for week of 6/5-6/11",
-      "summary": "Angelica from Greenwich Account Management sent the weekly report for Infusive GRX covering 6/5/26-6/11/26. Payment receipt to follow.",
-      "source": "gmail",
-      "sourceLabel": "Gmail — VYVE",
-      "from": "Angelica Macedo <angelica@greenwichaccountmgt.com>",
-      "received": "2026-06-12T21:11:44+00:00",
-      "status": "open",
-      "link": "https://mail.google.com/mail/u/0/#inbox/19ebdace255709ea",
-      "actionNeeded": "Review attached Greenwich GRX report for the week ending 6/11/26."
-    },
-    {
-      "id": "auto-20260613-3",
-      "urgency": "yellow",
-      "entity": "VYVE",
-      "category": "vendor",
-      "categoryLabel": "Vendor",
-      "vendor": null,
-      "title": "2 Market Media launch call notes and brand strategy",
-      "summary": "Janelle from 2 Market Media sent detailed launch call notes covering Will's background, origin story, VYVE business model, and brand positioning. Focus on 'Redox before repair' hook and simplifying complex cellular health messaging for 40-60 year old high-performers.",
-      "source": "gmail",
-      "sourceLabel": "Gmail — VYVE",
-      "from": "Janelle Tomagan <janelle@2marketmedia.com>",
-      "received": "2026-06-12T21:00:34+00:00",
-      "status": "open",
-      "link": "https://mail.google.com/mail/u/0/#inbox/19ebda3840c88ca8",
-      "actionNeeded": "Review brand strategy notes and provide feedback on messaging direction."
-    },
-    {
-      "id": "auto-20260613-4",
-      "urgency": "yellow",
-      "entity": "VYVE",
-      "category": "vendor",
-      "categoryLabel": "Vendor",
-      "vendor": null,
-      "title": "AI Operating System kickoff confirmed with Joe McVeen",
-      "summary": "Will confirmed invoice settled for AI Operating System implementation ($2,500 discovery phase). Looped in EA and Director of Ops but hasn't received meeting invite yet.",
-      "source": "gmail",
-      "sourceLabel": "Gmail — VYVE",
-      "from": "William Haas <will@vyvewellness.com>",
-      "received": "2026-06-12T18:21:45+00:00",
-      "status": "open",
-      "link": "https://mail.google.com/mail/u/0/#inbox/19ebd1228c9c397e",
-      "actionNeeded": "Follow up with Joe McVeen to ensure meeting invite is sent for AI implementation kickoff."
-    }
-  ]
+  "items": []
 }

@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-06-15T16:20:41.454915",
+  "lastUpdated": "2026-06-16T15:59:52.401563",
   "vendors": [
     "Influex",
     "UPQODE",
@@ -28,55 +28,21 @@
   "calendar": [],
   "items": [
     {
-      "id": "auto-20260615-1",
-      "urgency": "yellow",
-      "entity": "Infusive",
-      "category": "vendor",
-      "categoryLabel": "Vendor",
-      "vendor": "Stone Security",
-      "title": "Stone Security monitoring invoice — confirm Infusive account",
-      "summary": "Yanina paid installation invoices with AmEx but needs clarification on which account the monitoring invoice is for (Infusive vs VYVE) to arrange proper payment method.",
-      "source": "gmail",
-      "sourceLabel": "Gmail — VYVE",
-      "from": "Adam Morley",
-      "received": "2026-06-15T14:36:23+00:00",
-      "status": "open",
-      "link": "https://mail.google.com/mail/u/0/#inbox/19ecbb679e745942",
-      "actionNeeded": "Confirm monitoring invoice is for Infusive account so Yanina can complete payment."
-    },
-    {
-      "id": "auto-20260615-2",
+      "id": "auto-20260616-1",
       "urgency": "yellow",
       "entity": "VYVE",
       "category": "vendor",
       "categoryLabel": "Vendor",
-      "vendor": "2MM (Two Market Media)",
-      "title": "2MM onboarding — assets and weekly meeting schedule",
-      "summary": "Project manager Janelle needs brand assets uploaded and wants to schedule recurring meetings: Thursdays 3pm ET with team (30 min) and Tuesdays 12pm ET with Hank (60 min). Will requested Mondays/Fridays instead of clinical days Tues/Thurs.",
+      "vendor": "2MM (2 Market Media)",
+      "title": "2MM Onboarding: Calendar invites sent, assets needed",
+      "summary": "Janelle has sent calendar invites for recurring meetings with Steve (Mondays 2pm ET starting 6/26) and Hank (Mondays 10am ET starting 6/22). Yanina needs to upload assets to the shared folder.",
       "source": "gmail",
       "sourceLabel": "Gmail — VYVE",
-      "from": "William Haas",
-      "received": "2026-06-15T09:47:22+00:00",
+      "from": "Janelle Tomagan",
+      "received": "2026-06-15T16:06:11-07:00",
       "status": "open",
-      "link": "https://mail.google.com/mail/u/0/#inbox/19ecaae4857927f8",
-      "actionNeeded": "Work with EA to upload brand assets to shared folder and finalize weekly meeting times with 2MM team."
-    },
-    {
-      "id": "auto-20260615-3",
-      "urgency": "yellow",
-      "entity": "VYVE",
-      "category": "vendor",
-      "categoryLabel": "Vendor",
-      "vendor": "Text Titans",
-      "title": "Podcast recording with Jason Wright tomorrow 1pm CT",
-      "summary": "Zoom link provided for The Healthy CEO Show podcast recording scheduled for June 15, 2026 at 1pm Central (2pm ET). Interview Valet coordinated and requested promotion once episode publishes.",
-      "source": "gmail",
-      "sourceLabel": "Gmail — VYVE",
-      "from": "Jason Wright",
-      "received": "2026-06-15T00:51:30+00:00",
-      "status": "open",
-      "link": "https://mail.google.com/mail/u/0/#inbox/19ec8c34b4d4a71c",
-      "actionNeeded": "Join Zoom meeting tomorrow at 1pm CT for podcast recording with Jason Wright."
+      "link": "https://mail.google.com/mail/u/0/#inbox/19ecd899ed25ea5b",
+      "actionNeeded": "Confirm Yanina is working on uploading assets to 2MM's shared folder."
     }
   ]
 }

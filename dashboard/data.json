@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-06-17T14:27:23.874593",
+  "lastUpdated": "2026-06-18T14:13:09.568396",
   "vendors": [
     "Influex",
     "UPQODE",
@@ -26,40 +26,5 @@
     "McGuff"
   ],
   "calendar": [],
-  "items": [
-    {
-      "id": "auto-20260617-1",
-      "urgency": "yellow",
-      "entity": "VYVE",
-      "category": "clinical",
-      "categoryLabel": "Clinical",
-      "vendor": null,
-      "title": "Two voicemails from NC Cell Phone",
-      "summary": "Two voicemail messages received this morning (9:06 AM and 9:10 AM) from the same NC number in mailbox 112.",
-      "source": "gmail",
-      "sourceLabel": "Gmail — VYVE",
-      "from": "Cell Phone NC (19199461129)",
-      "received": "2026-06-17T08:10:59-05:00",
-      "status": "open",
-      "link": "https://mail.google.com/mail/u/0/#inbox/19ed5b4dac79a8cd",
-      "actionNeeded": "Listen to voicemails and respond if needed."
-    },
-    {
-      "id": "auto-20260617-2",
-      "urgency": "yellow",
-      "entity": "VYVE",
-      "category": "other",
-      "categoryLabel": "Other",
-      "vendor": null,
-      "title": "Meeting request from Lexie Kornegay",
-      "summary": "Lexie requested a meeting next week. Yanina proposed Monday 9am or 3pm, or Friday morning. Lexie confirmed Monday 9am works, 30 minutes, in person or Zoom.",
-      "source": "gmail",
-      "sourceLabel": "Gmail — VYVE",
-      "from": "Alexandria Kornegay",
-      "received": "2026-06-16T17:00:06-04:00",
-      "status": "open",
-      "link": "https://mail.google.com/mail/u/0/#inbox/19ed23c2b887be1b",
-      "actionNeeded": "Confirm Monday 9am meeting with Lexie and specify location preference."
-    }
-  ]
+  "items": []
 }

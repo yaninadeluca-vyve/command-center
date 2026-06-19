@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-06-18T14:13:09.568396",
+  "lastUpdated": "2026-06-19T14:14:52.890419",
   "vendors": [
     "Influex",
     "UPQODE",
@@ -26,5 +26,40 @@
     "McGuff"
   ],
   "calendar": [],
-  "items": []
+  "items": [
+    {
+      "id": "auto-20260619-1",
+      "urgency": "yellow",
+      "entity": "VYVE",
+      "category": "vendor",
+      "categoryLabel": "Vendor",
+      "vendor": "UPQODE",
+      "title": "UPQODE SEO plan approval needed",
+      "summary": "Will asked clarifying question about Google Ads vs organic SEO. UPQODE responded and is waiting for approval to prepare formal agreement.",
+      "source": "gmail",
+      "sourceLabel": "Gmail — VYVE",
+      "from": "Val Pas <valentin@upqode.com>",
+      "received": "2026-06-19T06:21:56-07:00",
+      "status": "open",
+      "link": "https://mail.google.com/mail/u/0/#inbox/19ee00bcdb77b8a4",
+      "actionNeeded": "Review UPQODE's explanation of Google Ads strategy and approve to move forward with formal agreement."
+    },
+    {
+      "id": "auto-20260619-2",
+      "urgency": "yellow",
+      "entity": "VYVE",
+      "category": "vendor",
+      "categoryLabel": "Vendor",
+      "vendor": "Influex",
+      "title": "Influex homepage messaging meeting scheduled",
+      "summary": "Meeting scheduled for June 24 at 5pm to discuss messaging and design for VYVE homepage with Angela, Dmitriy, and Tariq.",
+      "source": "gmail",
+      "sourceLabel": "Gmail — VYVE",
+      "from": "Angela Anderson <angela@influex.com>",
+      "received": "2026-06-18T19:04:04+00:00",
+      "status": "open",
+      "link": "https://mail.google.com/mail/u/0/#inbox/19edc1e7b8623729",
+      "actionNeeded": "Attend or prepare for homepage messaging meeting on June 24 at 5pm."
+    }
+  ]
 }

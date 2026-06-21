@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-06-20T12:27:50.675330",
+  "lastUpdated": "2026-06-21T13:10:29.805225",
   "vendors": [
     "Influex",
     "UPQODE",
@@ -26,57 +26,5 @@
     "McGuff"
   ],
   "calendar": [],
-  "items": [
-    {
-      "id": "auto-20260620-1",
-      "urgency": "yellow",
-      "entity": "VYVE",
-      "category": "vendor",
-      "categoryLabel": "Vendor",
-      "vendor": "Influex",
-      "title": "Influex requesting AEO/SEO coordination meeting with UPQODE",
-      "summary": "Angela from Influex wants to schedule a call with UPQODE to coordinate AEO and SEO work, ensure schema and structured data don't conflict. Proposed times: Tuesday 8-9am CST or Wednesday 24th 10:30am CST.",
-      "source": "gmail",
-      "sourceLabel": "Gmail — VYVE",
-      "from": "Angela Anderson <angela@influex.com>",
-      "received": "2026-06-19T18:08:21-06:00",
-      "status": "open",
-      "link": "https://mail.google.com/mail/u/0/#inbox/19ee25bf5df1e27e",
-      "actionNeeded": "Confirm if Will should attend this vendor coordination meeting or delegate to someone else."
-    },
-    {
-      "id": "auto-20260620-2",
-      "urgency": "yellow",
-      "entity": "VYVE",
-      "category": "vendor",
-      "categoryLabel": "Vendor",
-      "vendor": "UPQODE",
-      "title": "UPQODE awaiting approval to prepare formal SEO agreement",
-      "summary": "Val clarified Google Ads strategy (immediate visibility while organic builds). Will asked follow-up question. UPQODE is ready to move forward with formal agreement once approved.",
-      "source": "gmail",
-      "sourceLabel": "Gmail — VYVE",
-      "from": "Val Pas <valentin@upqode.com>",
-      "received": "2026-06-19T14:28:23+02:00",
-      "status": "open",
-      "link": "https://mail.google.com/mail/u/0/#inbox/19edfdb24d449286",
-      "actionNeeded": "Review Will's question about Google Ads and approve UPQODE to prepare formal agreement."
-    },
-    {
-      "id": "auto-20260620-3",
-      "urgency": "green",
-      "entity": "Infusive",
-      "category": "pharmacy",
-      "categoryLabel": "Pharmacy",
-      "vendor": null,
-      "title": "Greenwich pharmacy report for week 06/12-06/18",
-      "summary": "Angelica sent the weekly GRX report for Infusive covering June 12-18, 2026. Payment receipt to follow.",
-      "source": "gmail",
-      "sourceLabel": "Gmail — VYVE",
-      "from": "Angelica Macedo <angelica@greenwichaccountmgt.com>",
-      "received": "2026-06-19T14:22:38-05:00",
-      "status": "open",
-      "link": "https://mail.google.com/mail/u/0/#inbox/19ee1556f655b5bf",
-      "actionNeeded": "Review attached Greenwich report if needed for oversight."
-    }
-  ]
+  "items": []
 }

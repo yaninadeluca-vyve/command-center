@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-06-22T15:56:47.713901",
+  "lastUpdated": "2026-06-23T13:44:43.689133",
   "vendors": [
     "Influex",
     "UPQODE",
@@ -26,5 +26,91 @@
     "McGuff"
   ],
   "calendar": [],
-  "items": []
+  "items": [
+    {
+      "id": "auto-20260623-1",
+      "urgency": "yellow",
+      "entity": "VYVE",
+      "category": "vendor",
+      "categoryLabel": "Vendor",
+      "vendor": "Influex",
+      "title": "Action items assigned in AEO Tracker",
+      "summary": "Crista from Influex assigned two action items: grant GA4/GTM access to tech@influex.com and compile external citation links for Charlotte Mag #1, Castle Connolly, Andrew Weil, and SSRP.",
+      "source": "gmail",
+      "sourceLabel": "Gmail — VYVE",
+      "from": "Crista Macale (crista@influex.com)",
+      "received": "2026-06-23T09:23:39Z",
+      "status": "open",
+      "link": "https://mail.google.com/mail/u/0/#inbox/19ef3cae0c00aeaa",
+      "actionNeeded": "Review and complete the two assigned action items in the AEO Tracker document."
+    },
+    {
+      "id": "auto-20260623-2",
+      "urgency": "yellow",
+      "entity": "VYVE",
+      "category": "vendor",
+      "categoryLabel": "Vendor",
+      "vendor": "UPQODE",
+      "title": "UPQODE coordinating with Influex on AEO alignment",
+      "summary": "Val from UPQODE responded to Angela at Influex to schedule a sync call ensuring their SEO work aligns with Influex's AEO efforts. Collaboration between vendors is underway.",
+      "source": "gmail",
+      "sourceLabel": "Gmail — VYVE",
+      "from": "Val Pas (valentin@upqode.com)",
+      "received": "2026-06-23T09:57:11Z",
+      "status": "open",
+      "link": "https://mail.google.com/mail/u/0/#inbox/19ef3ea2007390b4",
+      "actionNeeded": "Monitor vendor coordination; no immediate action needed unless alignment issues arise."
+    },
+    {
+      "id": "auto-20260623-3",
+      "urgency": "green",
+      "entity": "VYVE",
+      "category": "vendor",
+      "categoryLabel": "Vendor",
+      "vendor": "UPQODE",
+      "title": "UPQODE SEO/AEO plan clarification on paid ads",
+      "summary": "Will approved UPQODE's plan after Val clarified the rationale for running paid ads alongside SEO/AEO efforts for user behavior insights and synergy.",
+      "source": "gmail",
+      "sourceLabel": "Gmail — VYVE",
+      "from": "William Haas / Val Pas",
+      "received": "2026-06-23T10:11:22Z",
+      "status": "open",
+      "link": "https://mail.google.com/mail/u/0/#inbox/19ef3f6c396e2254",
+      "actionNeeded": "None; plan approved and vendor moving forward."
+    },
+    {
+      "id": "auto-20260623-4",
+      "urgency": "yellow",
+      "entity": "VYVE",
+      "category": "other",
+      "categoryLabel": "Other",
+      "vendor": null,
+      "title": "Podcast interview scheduled with Dr. Meg Mill",
+      "summary": "Interview Valet scheduled a podcast appearance on 'A Little Bit Healthier' for July 1, 2026 at 8am ET via Zoom. One sheet and headshot provided.",
+      "source": "gmail",
+      "sourceLabel": "Gmail — VYVE",
+      "from": "Christina Pedersen (Christina@interviewvalet.com)",
+      "received": "2026-06-22T21:28:03Z",
+      "status": "open",
+      "link": "https://mail.google.com/mail/u/0/#inbox/19ef13c4bd5d90b9",
+      "actionNeeded": "Confirm calendar holds for July 1 at 8am ET and prepare for podcast interview."
+    },
+    {
+      "id": "auto-20260623-5",
+      "urgency": "yellow",
+      "entity": "VYVE",
+      "category": "vendor",
+      "categoryLabel": "Vendor",
+      "vendor": "One Billion Media",
+      "title": "2MM onboarding materials uploaded, website copy audit pending",
+      "summary": "Janelle from 2 Market Media confirmed receipt of social media links and articles. Discovery package includes a website copy audit after Brand Bible finalization, which may recommend changes to website currently in production.",
+      "source": "gmail",
+      "sourceLabel": "Gmail — VYVE",
+      "from": "Janelle Tomagan (janelle@2marketmedia.com)",
+      "received": "2026-06-22T19:32:24Z",
+      "status": "open",
+      "link": "https://mail.google.com/mail/u/0/#inbox/19ef0d2668c08d78",
+      "actionNeeded": "Share personal website link and branding assets once available; be aware of potential copy change recommendations."
+    }
+  ]
 }

@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-06-27T12:10:50.413468",
+  "lastUpdated": "2026-06-28T12:18:31.181068",
   "vendors": [
     "Influex",
     "UPQODE",
@@ -26,74 +26,5 @@
     "McGuff"
   ],
   "calendar": [],
-  "items": [
-    {
-      "id": "auto-20260627-1",
-      "urgency": "yellow",
-      "entity": "VYVE",
-      "category": "pharmacy",
-      "categoryLabel": "Pharmacy",
-      "vendor": null,
-      "title": "Greenwich weekly report received for review",
-      "summary": "Weekly GRX report for 06/19/26-06/25/26 from Greenwich has been submitted. Payment receipt to follow.",
-      "source": "gmail",
-      "sourceLabel": "Gmail — VYVE",
-      "from": "Angelica Macedo <angelica@greenwichaccountmgt.com>",
-      "received": "2026-06-26T21:28:16Z",
-      "status": "open",
-      "link": "https://mail.google.com/mail/u/0/#inbox/19f05d4dd4fd6713",
-      "actionNeeded": "Review the attached Greenwich report and confirm receipt."
-    },
-    {
-      "id": "auto-20260627-2",
-      "urgency": "yellow",
-      "entity": "VYVE",
-      "category": "vendor",
-      "categoryLabel": "Vendor",
-      "vendor": "Growth Mastery AI",
-      "title": "AI Revenue Engine approved, kickoff needed",
-      "summary": "Phase 1 AI Revenue Engine has been green-lit. Invoice sent via Stripe. Joe McVeen is requesting to schedule a kickoff session for Thursday, July 2.",
-      "source": "gmail",
-      "sourceLabel": "Gmail — VYVE",
-      "from": "Joe McVeen <joe@growthmastery.ai>",
-      "received": "2026-06-26T21:10:14Z",
-      "status": "open",
-      "link": "https://mail.google.com/mail/u/0/#inbox/19f05c506f216efd",
-      "actionNeeded": "Select a kickoff time on July 2 and confirm with Yanina to schedule."
-    },
-    {
-      "id": "auto-20260627-3",
-      "urgency": "yellow",
-      "entity": "VYVE",
-      "category": "vendor",
-      "categoryLabel": "Vendor",
-      "vendor": "2 Market Media",
-      "title": "2MM meeting rescheduled to Monday 6/29",
-      "summary": "Today's meetings were canceled due to urgent clinic matters. Agenda will be covered during Monday's call with Steve at 2pm ET.",
-      "source": "gmail",
-      "sourceLabel": "Gmail — VYVE",
-      "from": "Janelle Tomagan <janelle@2marketmedia.com>",
-      "received": "2026-06-26T17:51:04Z",
-      "status": "open",
-      "link": "https://mail.google.com/mail/u/0/#inbox/19f050f0e6a16cb7",
-      "actionNeeded": "Attend the rescheduled call with Steve on Monday 6/29 at 2pm ET."
-    },
-    {
-      "id": "auto-20260627-4",
-      "urgency": "green",
-      "entity": "VYVE",
-      "category": "vendor",
-      "categoryLabel": "Vendor",
-      "vendor": "UPQODE",
-      "title": "UPQODE SEO agreement signed and completed",
-      "summary": "SEO/AEO action plan agreement has been signed by Dr. Haas. UPQODE can now proceed with next steps.",
-      "source": "gmail",
-      "sourceLabel": "Gmail — VYVE",
-      "from": "William Haas <will@vyvewellness.com>",
-      "received": "2026-06-26T14:06:18Z",
-      "status": "open",
-      "link": "https://mail.google.com/mail/u/0/#inbox/19f044159db16d97",
-      "actionNeeded": "No action needed — agreement already signed and confirmed."
-    }
-  ]
+  "items": []
 }

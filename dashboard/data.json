@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-06-28T12:18:31.181068",
+  "lastUpdated": "2026-06-29T14:48:32.917074",
   "vendors": [
     "Influex",
     "UPQODE",
@@ -26,5 +26,23 @@
     "McGuff"
   ],
   "calendar": [],
-  "items": []
+  "items": [
+    {
+      "id": "auto-20260629-1",
+      "urgency": "red",
+      "entity": "Infusive",
+      "category": "vendor",
+      "categoryLabel": "Vendor",
+      "vendor": "Influex",
+      "title": "Influex needs copy approval by June 30",
+      "summary": "Influex needs feedback and sign-off on Supply Chain page updates and new Interstitial page copy by tomorrow (June 30). Flex Fund is currently over budget by $406.25 as of June 26.",
+      "source": "gmail",
+      "sourceLabel": "Gmail — VYVE",
+      "from": "Deonelene Villegas <deonelene@influex.com>",
+      "received": "2026-06-29T13:00:44Z",
+      "status": "open",
+      "link": "https://mail.google.com/mail/u/0/#inbox/19f1377ecff7f731",
+      "actionNeeded": "Review and approve copy for Supply Chain and Interstitial pages by June 30."
+    }
+  ]
 }
